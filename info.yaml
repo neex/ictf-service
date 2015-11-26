@@ -1,0 +1,6 @@
+service_name: transator
+type: console
+decription: google translate killer
+flag_id_description: private dictionary name
+architecture: x86_64
+
