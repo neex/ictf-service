@@ -14,6 +14,7 @@ def get_flag(ip, port, flag_id, token):
     assert r.readline() == 'Dictionary loaded\n', "Can't load dictionary"    
     r.send("translate secretik\n")
     flag = r.readline().strip()
+    assert flag != "secretik", "Flag not present or deleted"
     r.send("quit\n")
     assert r.recvall() == "Good bye!\n", "Wrong goodbye"
     return {"FLAG" : flag}
