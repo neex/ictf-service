@@ -1,2 +1,1 @@
-s/ph1/repl1/g;
-s/ph2/repl2/g;
+s/you/u/g; s/for/4/g; s/s/$/g; s/a/4/gi; s/e/3/gi; s#v#\/#gi; s/l/1/gi; s/b/8/gi; s/o/0/gi;
