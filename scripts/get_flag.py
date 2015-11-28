@@ -1,7 +1,7 @@
 import pwn, re, random, string
 
 def get_flag(ip, port, flag_id, token):
-    pwn.context(log_level='debug', timeout=10)
+    pwn.context(timeout=10)
     r = pwn.remote(ip, port)    
     assert r.readline() == 'Welcome to translator!\n', "Wrong banner"
     r.send("dict {}\n".format(flag_id))
@@ -19,5 +19,3 @@ def get_flag(ip, port, flag_id, token):
     assert r.recvall() == "Good bye!\n", "Wrong goodbye"
     return {"FLAG" : flag}
 
-if __name__ == "__main__":
-    print get_flag('localhost', 12343, 'RCVlzGtIjBjpPavObDWbZcMEuzYpIp', 'kdVkuKFPOidBUZSIQQqYPpdVNxZBtS')

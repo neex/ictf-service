@@ -3,7 +3,7 @@ import pwn, re, random, string
 def benign(ip, port):
     def rand_str():
         return ''.join(random.choice(string.ascii_letters) for i in range(30))
-    pwn.context(log_level='debug', timeout=10)
+    pwn.context(timeout=10)
     word_cnt = random.randrange(3, 10)
     words = []
     for i in range(word_cnt):
@@ -103,6 +103,3 @@ def benign(ip, port):
 
     r.send("quit\n")
     assert r.recvall() == "Good bye!\n", "Wrong goodbye"
-
-if __name__ == "__main__":
-    print benign('localhost', 12343)

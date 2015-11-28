@@ -1,7 +1,7 @@
 import pwn, re, random, string
 
 def set_flag(ip, port, flag):
-    pwn.context(log_level='debug', timeout=10)
+    pwn.context(timeout=10)
     flag_id = "".join(random.choice(string.ascii_letters) for i in range(30))
     token = "".join(random.choice(string.ascii_letters) for i in range(30))    
     r = pwn.remote(ip, port)    
@@ -18,6 +18,3 @@ def set_flag(ip, port, flag):
     r.send("quit\n")
     assert r.recvall() == "Good bye!\n", "Wrong goodbye"
     return {"FLAG_ID" : flag_id, "TOKEN" : token}
-
-if __name__ == "__main__":
-    print set_flag('localhost', 12343, 'secretflag')
