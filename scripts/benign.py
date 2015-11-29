@@ -18,46 +18,46 @@ def benign(ip, port):
     str_without_translate = str_to_translate
 
     r = pwn.remote(ip, port)
-    if not r.readline() == 'Welcome to translator!\n':
+    if not r.recvline() == 'Welcome to the NADMOZG translator service!\n':
         raise RuntimeError("Wrong banner")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_without_translate:
+    if not r.recvline().strip() == str_without_translate:
         raise RuntimeError("Wrong default translation")
     r.send("dict {}\n".format(dict_id1))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(''.join(chr(ord(c) ^ byte) for c in pwd1).encode('hex') + '\n')
-    if not r.readline() == "Dictionary created\n":
+    if not r.recvline() == "Dictionary created\n":
         raise RuntimeError("Can't create dictionary 1")
     for (word_from, word_to1, word_to2) in words:
         r.send("add {} {}\n".format(word_from, word_to1))
-        if not r.readline() == "Word saved!\n":
+        if not r.recvline() == "Word saved!\n":
             raise RuntimeError("Can't store word")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_after_translate_1:
+    if not r.recvline().strip() == str_after_translate_1:
         raise RuntimeError("Wrong translation after adding words")
 
     r.send("dict {}\n".format(dict_id2))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(''.join(chr(ord(c) ^ byte) for c in pwd2).encode('hex') + '\n')
-    if not r.readline() == "Dictionary created\n":
+    if not r.recvline() == "Dictionary created\n":
         raise RuntimeError("Can't create dictionary 2")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_without_translate:
+    if not r.recvline().strip() == str_without_translate:
         raise RuntimeError("Wrong translation after switching dictionaries")
     for (word_from, word_to1, word_to2) in words:
         r.send("add {} {}\n".format(word_from, word_to2))
-        if not r.readline() == "Word saved!\n":
+        if not r.recvline() == "Word saved!\n":
             raise RuntimeError("Can't store word")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_after_translate_2:
+    if not r.recvline().strip() == str_after_translate_2:
         raise RuntimeError("Wrong translation after adding words to another dictionary")
 
     r.send("quit\n")
@@ -66,69 +66,69 @@ def benign(ip, port):
 
 
     r = pwn.remote(ip, port)
-    if not r.readline() == 'Welcome to translator!\n':
+    if not r.recvline() == 'Welcome to the NADMOZG translator service!\n':
         raise RuntimeError("Wrong banner")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_without_translate:
+    if not r.recvline().strip() == str_without_translate:
         raise RuntimeError("Wrong default translation after words added to another dictionary")
     r.send("dict {}\n".format(dict_id1))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(''.join(chr(ord(c) ^ byte) for c in pwd2).encode('hex') + '\n')
-    if not r.readline() == "Dictionary exists and password doesn't match\n":
+    if not r.recvline() == "Dictionary exists and password doesn't match\n":
         raise RuntimeError("Wrong message after wrong password")
-    if not r.readline() == "Dictionary not loaded\n":
+    if not r.recvline() == "Dictionary not loaded\n":
         raise RuntimeError("Wrong message after wrong password")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_without_translate:
+    if not r.recvline().strip() == str_without_translate:
         raise RuntimeError("Wrong translation after wrong password attempt")
 
     r.send("dict {}\n".format(dict_id1))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(pwd1 + 'XXX\n')
-    if not r.readline() == 'Please input only hexadecimal characters\n':
+    if not r.recvline() == 'Please input only hexadecimal characters\n':
         raise RuntimeError("Wrong message after invalid password")
-    if not r.readline() == "Dictionary not loaded\n":
+    if not r.recvline() == "Dictionary not loaded\n":
         raise RuntimeError("Wrong message after invalid password")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_without_translate:
+    if not r.recvline().strip() == str_without_translate:
         raise RuntimeError("Wrong translation after invalid password attempt")
 
     r.send("dict {}\n".format(dict_id1))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(''.join(chr(ord(c) ^ byte) for c in pwd1).encode('hex') + '\n')
-    if not r.readline() == 'Password ok!\n':
+    if not r.recvline() == 'Password ok!\n':
         raise RuntimeError("Can't load dictionary")
-    if not r.readline() == 'Dictionary loaded\n':
+    if not r.recvline() == 'Dictionary loaded\n':
         raise RuntimeError("Can't load dictionary")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_after_translate_1:
+    if not r.recvline().strip() == str_after_translate_1:
         raise RuntimeError("Wrong translation after loading stored dictionary")
 
     r.send("dict {}\n".format(dict_id2))
-    info = r.readline()
+    info = r.recvline()
     m = re.match("Please enter your alphanumeric password xored with byte 0x([0-9A-F]{2}) and hex encoded:\n", info)
     if not m:
         raise RuntimeError("Wrong password request")
     byte = int(m.group(1), 16)
     r.send(''.join(chr(ord(c) ^ byte) for c in pwd2).encode('hex') + '\n')
-    if not r.readline() == 'Password ok!\n':
+    if not r.recvline() == 'Password ok!\n':
         raise RuntimeError("Can't load dictionary")
-    if not r.readline() == 'Dictionary loaded\n':
+    if not r.recvline() == 'Dictionary loaded\n':
         raise RuntimeError("Can't load dictionary")
     r.send("translate {}\n".format(str_to_translate))
-    if not r.readline().strip() == str_after_translate_2:
+    if not r.recvline().strip() == str_after_translate_2:
         raise RuntimeError("Wrong translation after loading stored dictionary")
 
     r.send("quit\n")

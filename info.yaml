@@ -1,4 +1,4 @@
-service_name: transator
+service_name: nadmozg
 type: console
 decription: google translate killer
 flag_id_description: private dictionary name

@@ -1,3 +1,0 @@
-#!/bin/sh
-echo "Welcome to translator!"
-LANG=C sed -unrf ../ro/main.sed
