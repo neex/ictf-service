@@ -1,1002 +1,2284 @@
-s#(^| )the($| )#\1th3\2#g;
-s#(^| )of($| )#\10f\2#g;
-s#(^| )to($| )#\1t0\2#g;
-s#(^| )and($| )#\14nd\2#g;
-s#(^| )a($| )#\14\2#g;
-s#(^| )in($| )#\1in\2#g;
-s#(^| )is($| )#\1i$\2#g;
-s#(^| )it($| )#\1it\2#g;
-s#(^| )you($| )#\1u\2#g;
-s#(^| )that($| )#\1th4t\2#g;
-s#(^| )he($| )#\1h3\2#g;
-s#(^| )was($| )#\1w4$\2#g;
-s#(^| )for($| )#\14\2#g;
-s#(^| )on($| )#\10n\2#g;
-s#(^| )are($| )#\14r3\2#g;
-s#(^| )with($| )#\1with\2#g;
-s#(^| )as($| )#\14$\2#g;
-s#(^| )I($| )#\1I\2#g;
-s#(^| )his($| )#\1hi$\2#g;
-s#(^| )they($| )#\1th3y\2#g;
-s#(^| )be($| )#\183\2#g;
-s#(^| )at($| )#\14t\2#g;
-s#(^| )one($| )#\10n3\2#g;
-s#(^| )have($| )#\1h4\/3\2#g;
-s#(^| )this($| )#\1thi$\2#g;
-s#(^| )from($| )#\1fr0m\2#g;
-s#(^| )or($| )#\10r\2#g;
-s#(^| )had($| )#\1h4d\2#g;
-s#(^| )by($| )#\18y\2#g;
-s#(^| )hot($| )#\1h0t\2#g;
-s#(^| )word($| )#\1w0rd\2#g;
-s#(^| )but($| )#\18ut\2#g;
-s#(^| )what($| )#\1wh4t\2#g;
-s#(^| )some($| )#\1$0m3\2#g;
-s#(^| )we($| )#\1w3\2#g;
-s#(^| )can($| )#\1c4n\2#g;
-s#(^| )out($| )#\10ut\2#g;
-s#(^| )other($| )#\10th3r\2#g;
-s#(^| )were($| )#\1w3r3\2#g;
-s#(^| )all($| )#\1411\2#g;
-s#(^| )there($| )#\1th3r3\2#g;
-s#(^| )when($| )#\1wh3n\2#g;
-s#(^| )up($| )#\1up\2#g;
-s#(^| )use($| )#\1u$3\2#g;
-s#(^| )your($| )#\1ur\2#g;
-s#(^| )hello($| )#\1h3110\2#g;
-s#(^| )how($| )#\1h0w\2#g;
-s#(^| )said($| )#\1$4id\2#g;
-s#(^| )an($| )#\14n\2#g;
-s#(^| )each($| )#\134ch\2#g;
-s#(^| )she($| )#\1$h3\2#g;
-s#(^| )which($| )#\1which\2#g;
-s#(^| )do($| )#\1d0\2#g;
-s#(^| )their($| )#\1th3ir\2#g;
-s#(^| )time($| )#\1tim3\2#g;
-s#(^| )if($| )#\1if\2#g;
-s#(^| )will($| )#\1wi11\2#g;
-s#(^| )way($| )#\1w4y\2#g;
-s#(^| )about($| )#\1480ut\2#g;
-s#(^| )many($| )#\1m4ny\2#g;
-s#(^| )then($| )#\1th3n\2#g;
-s#(^| )them($| )#\1th3m\2#g;
-s#(^| )write($| )#\1writ3\2#g;
-s#(^| )would($| )#\1w0u1d\2#g;
-s#(^| )like($| )#\11ik3\2#g;
-s#(^| )so($| )#\1$0\2#g;
-s#(^| )these($| )#\1th3$3\2#g;
-s#(^| )her($| )#\1h3r\2#g;
-s#(^| )long($| )#\110ng\2#g;
-s#(^| )make($| )#\1m4k3\2#g;
-s#(^| )hack($| )#\1h4ck\2#g;
-s#(^| )hacker($| )#\1h4ck3r\2#g;
-s#(^| )thing($| )#\1thing\2#g;
-s#(^| )see($| )#\1$33\2#g;
-s#(^| )him($| )#\1him\2#g;
-s#(^| )two($| )#\1tw0\2#g;
-s#(^| )has($| )#\1h4$\2#g;
-s#(^| )look($| )#\1100k\2#g;
-s#(^| )more($| )#\1m0r3\2#g;
-s#(^| )day($| )#\1d4y\2#g;
-s#(^| )could($| )#\1c0u1d\2#g;
-s#(^| )go($| )#\1g0\2#g;
-s#(^| )come($| )#\1c0m3\2#g;
-s#(^| )did($| )#\1did\2#g;
-s#(^| )number($| )#\1num83r\2#g;
-s#(^| )sound($| )#\1$0und\2#g;
-s#(^| )no($| )#\1n0\2#g;
-s#(^| )most($| )#\1m0$t\2#g;
-s#(^| )people($| )#\1p30p13\2#g;
-s#(^| )my($| )#\1my\2#g;
-s#(^| )over($| )#\10\/3r\2#g;
-s#(^| )know($| )#\1kn0w\2#g;
-s#(^| )water($| )#\1w4t3r\2#g;
-s#(^| )than($| )#\1th4n\2#g;
-s#(^| )call($| )#\1c411\2#g;
-s#(^| )first($| )#\1fir$t\2#g;
-s#(^| )who($| )#\1wh0\2#g;
-s#(^| )may($| )#\1m4y\2#g;
-s#(^| )down($| )#\1d0wn\2#g;
-s#(^| )side($| )#\1$id3\2#g;
-s#(^| )been($| )#\1833n\2#g;
-s#(^| )now($| )#\1n0w\2#g;
-s#(^| )find($| )#\1find\2#g;
-s#(^| )any($| )#\14ny\2#g;
-s#(^| )new($| )#\1n3w\2#g;
-s#(^| )work($| )#\1w0rk\2#g;
-s#(^| )part($| )#\1p4rt\2#g;
-s#(^| )take($| )#\1t4k3\2#g;
-s#(^| )get($| )#\1g3t\2#g;
-s#(^| )place($| )#\1p14c3\2#g;
-s#(^| )made($| )#\1m4d3\2#g;
-s#(^| )live($| )#\11i\/3\2#g;
-s#(^| )where($| )#\1wh3r3\2#g;
-s#(^| )after($| )#\14ft3r\2#g;
-s#(^| )back($| )#\184ck\2#g;
-s#(^| )little($| )#\11itt13\2#g;
-s#(^| )only($| )#\10n1y\2#g;
-s#(^| )round($| )#\1r0und\2#g;
-s#(^| )man($| )#\1m4n\2#g;
-s#(^| )year($| )#\1y34r\2#g;
-s#(^| )came($| )#\1c4m3\2#g;
-s#(^| )show($| )#\1$h0w\2#g;
-s#(^| )every($| )#\13\/3ry\2#g;
-s#(^| )good($| )#\1g00d\2#g;
-s#(^| )me($| )#\1m3\2#g;
-s#(^| )give($| )#\1gi\/3\2#g;
-s#(^| )our($| )#\10ur\2#g;
-s#(^| )under($| )#\1und3r\2#g;
-s#(^| )name($| )#\1n4m3\2#g;
-s#(^| )very($| )#\1\/3ry\2#g;
-s#(^| )through($| )#\1thr0ugh\2#g;
-s#(^| )just($| )#\1ju$t\2#g;
-s#(^| )form($| )#\14m\2#g;
-s#(^| )sentence($| )#\1$3nt3nc3\2#g;
-s#(^| )great($| )#\1gr34t\2#g;
-s#(^| )think($| )#\1think\2#g;
-s#(^| )say($| )#\1$4y\2#g;
-s#(^| )help($| )#\1h31p\2#g;
-s#(^| )low($| )#\110w\2#g;
-s#(^| )line($| )#\11in3\2#g;
-s#(^| )differ($| )#\1diff3r\2#g;
-s#(^| )turn($| )#\1turn\2#g;
-s#(^| )cause($| )#\1c4u$3\2#g;
-s#(^| )much($| )#\1much\2#g;
-s#(^| )mean($| )#\1m34n\2#g;
-s#(^| )before($| )#\18343\2#g;
-s#(^| )move($| )#\1m0\/3\2#g;
-s#(^| )right($| )#\1right\2#g;
-s#(^| )boy($| )#\180y\2#g;
-s#(^| )old($| )#\101d\2#g;
-s#(^| )too($| )#\1t00\2#g;
-s#(^| )same($| )#\1$4m3\2#g;
-s#(^| )tell($| )#\1t311\2#g;
-s#(^| )does($| )#\1d03$\2#g;
-s#(^| )set($| )#\1$3t\2#g;
-s#(^| )three($| )#\1thr33\2#g;
-s#(^| )want($| )#\1w4nt\2#g;
-s#(^| )air($| )#\14ir\2#g;
-s#(^| )well($| )#\1w311\2#g;
-s#(^| )also($| )#\141$0\2#g;
-s#(^| )play($| )#\1p14y\2#g;
-s#(^| )small($| )#\1$m411\2#g;
-s#(^| )end($| )#\13nd\2#g;
-s#(^| )put($| )#\1put\2#g;
-s#(^| )home($| )#\1h0m3\2#g;
-s#(^| )read($| )#\1r34d\2#g;
-s#(^| )hand($| )#\1h4nd\2#g;
-s#(^| )port($| )#\1p0rt\2#g;
-s#(^| )large($| )#\114rg3\2#g;
-s#(^| )spell($| )#\1$p311\2#g;
-s#(^| )add($| )#\14dd\2#g;
-s#(^| )even($| )#\13\/3n\2#g;
-s#(^| )land($| )#\114nd\2#g;
-s#(^| )here($| )#\1h3r3\2#g;
-s#(^| )must($| )#\1mu$t\2#g;
-s#(^| )big($| )#\18ig\2#g;
-s#(^| )high($| )#\1high\2#g;
-s#(^| )such($| )#\1$uch\2#g;
-s#(^| )follow($| )#\1f0110w\2#g;
-s#(^| )act($| )#\14ct\2#g;
-s#(^| )why($| )#\1why\2#g;
-s#(^| )ask($| )#\14$k\2#g;
-s#(^| )men($| )#\1m3n\2#g;
-s#(^| )change($| )#\1ch4ng3\2#g;
-s#(^| )went($| )#\1w3nt\2#g;
-s#(^| )light($| )#\11ight\2#g;
-s#(^| )kind($| )#\1kind\2#g;
-s#(^| )off($| )#\10ff\2#g;
-s#(^| )need($| )#\1n33d\2#g;
-s#(^| )house($| )#\1h0u$3\2#g;
-s#(^| )picture($| )#\1pictur3\2#g;
-s#(^| )try($| )#\1try\2#g;
-s#(^| )us($| )#\1u$\2#g;
-s#(^| )again($| )#\14g4in\2#g;
-s#(^| )animal($| )#\14nim41\2#g;
-s#(^| )point($| )#\1p0int\2#g;
-s#(^| )mother($| )#\1m0th3r\2#g;
-s#(^| )world($| )#\1w0r1d\2#g;
-s#(^| )near($| )#\1n34r\2#g;
-s#(^| )build($| )#\18ui1d\2#g;
-s#(^| )self($| )#\1$31f\2#g;
-s#(^| )earth($| )#\134rth\2#g;
-s#(^| )father($| )#\1f4th3r\2#g;
-s#(^| )head($| )#\1h34d\2#g;
-s#(^| )stand($| )#\1$t4nd\2#g;
-s#(^| )own($| )#\10wn\2#g;
-s#(^| )page($| )#\1p4g3\2#g;
-s#(^| )should($| )#\1$h0u1d\2#g;
-s#(^| )country($| )#\1c0untry\2#g;
-s#(^| )found($| )#\1f0und\2#g;
-s#(^| )answer($| )#\14n$w3r\2#g;
-s#(^| )school($| )#\1$ch001\2#g;
-s#(^| )grow($| )#\1gr0w\2#g;
-s#(^| )study($| )#\1$tudy\2#g;
-s#(^| )still($| )#\1$ti11\2#g;
-s#(^| )learn($| )#\1134rn\2#g;
-s#(^| )plant($| )#\1p14nt\2#g;
-s#(^| )cover($| )#\1c0\/3r\2#g;
-s#(^| )food($| )#\1f00d\2#g;
-s#(^| )sun($| )#\1$un\2#g;
-s#(^| )four($| )#\1f0ur\2#g;
-s#(^| )between($| )#\183tw33n\2#g;
-s#(^| )state($| )#\1$t4t3\2#g;
-s#(^| )keep($| )#\1k33p\2#g;
-s#(^| )eye($| )#\13y3\2#g;
-s#(^| )never($| )#\1n3\/3r\2#g;
-s#(^| )last($| )#\114$t\2#g;
-s#(^| )let($| )#\113t\2#g;
-s#(^| )thought($| )#\1th0ught\2#g;
-s#(^| )city($| )#\1city\2#g;
-s#(^| )tree($| )#\1tr33\2#g;
-s#(^| )cross($| )#\1cr0$$\2#g;
-s#(^| )farm($| )#\1f4rm\2#g;
-s#(^| )hard($| )#\1h4rd\2#g;
-s#(^| )start($| )#\1$t4rt\2#g;
-s#(^| )might($| )#\1might\2#g;
-s#(^| )story($| )#\1$t0ry\2#g;
-s#(^| )saw($| )#\1$4w\2#g;
-s#(^| )far($| )#\1f4r\2#g;
-s#(^| )sea($| )#\1$34\2#g;
-s#(^| )draw($| )#\1dr4w\2#g;
-s#(^| )left($| )#\113ft\2#g;
-s#(^| )late($| )#\114t3\2#g;
-s#(^| )run($| )#\1run\2#g;
-s#(^| )don't($| )#\1d0n't\2#g;
-s#(^| )while($| )#\1whi13\2#g;
-s#(^| )press($| )#\1pr3$$\2#g;
-s#(^| )close($| )#\1c10$3\2#g;
-s#(^| )night($| )#\1night\2#g;
-s#(^| )real($| )#\1r341\2#g;
-s#(^| )life($| )#\11if3\2#g;
-s#(^| )few($| )#\1f3w\2#g;
-s#(^| )north($| )#\1n0rth\2#g;
-s#(^| )open($| )#\10p3n\2#g;
-s#(^| )seem($| )#\1$33m\2#g;
-s#(^| )together($| )#\1t0g3th3r\2#g;
-s#(^| )next($| )#\1n3xt\2#g;
-s#(^| )white($| )#\1whit3\2#g;
-s#(^| )children($| )#\1chi1dr3n\2#g;
-s#(^| )begin($| )#\183gin\2#g;
-s#(^| )got($| )#\1g0t\2#g;
-s#(^| )walk($| )#\1w41k\2#g;
-s#(^| )example($| )#\13x4mp13\2#g;
-s#(^| )ease($| )#\134$3\2#g;
-s#(^| )paper($| )#\1p4p3r\2#g;
-s#(^| )group($| )#\1gr0up\2#g;
-s#(^| )always($| )#\141w4y$\2#g;
-s#(^| )music($| )#\1mu$ic\2#g;
-s#(^| )those($| )#\1th0$3\2#g;
-s#(^| )both($| )#\180th\2#g;
-s#(^| )mark($| )#\1m4rk\2#g;
-s#(^| )often($| )#\10ft3n\2#g;
-s#(^| )letter($| )#\113tt3r\2#g;
-s#(^| )until($| )#\1unti1\2#g;
-s#(^| )mile($| )#\1mi13\2#g;
-s#(^| )river($| )#\1ri\/3r\2#g;
-s#(^| )car($| )#\1c4r\2#g;
-s#(^| )feet($| )#\1f33t\2#g;
-s#(^| )care($| )#\1c4r3\2#g;
-s#(^| )second($| )#\1$3c0nd\2#g;
-s#(^| )book($| )#\1800k\2#g;
-s#(^| )carry($| )#\1c4rry\2#g;
-s#(^| )took($| )#\1t00k\2#g;
-s#(^| )science($| )#\1$ci3nc3\2#g;
-s#(^| )eat($| )#\134t\2#g;
-s#(^| )room($| )#\1r00m\2#g;
-s#(^| )friend($| )#\1fri3nd\2#g;
-s#(^| )began($| )#\183g4n\2#g;
-s#(^| )idea($| )#\1id34\2#g;
-s#(^| )fish($| )#\1fi$h\2#g;
-s#(^| )mountain($| )#\1m0unt4in\2#g;
-s#(^| )stop($| )#\1$t0p\2#g;
-s#(^| )once($| )#\10nc3\2#g;
-s#(^| )base($| )#\184$3\2#g;
-s#(^| )hear($| )#\1h34r\2#g;
-s#(^| )horse($| )#\1h0r$3\2#g;
-s#(^| )cut($| )#\1cut\2#g;
-s#(^| )sure($| )#\1$ur3\2#g;
-s#(^| )watch($| )#\1w4tch\2#g;
-s#(^| )color($| )#\1c010r\2#g;
-s#(^| )face($| )#\1f4c3\2#g;
-s#(^| )wood($| )#\1w00d\2#g;
-s#(^| )main($| )#\1m4in\2#g;
-s#(^| )enough($| )#\13n0ugh\2#g;
-s#(^| )plain($| )#\1p14in\2#g;
-s#(^| )girl($| )#\1gir1\2#g;
-s#(^| )usual($| )#\1u$u41\2#g;
-s#(^| )young($| )#\1ung\2#g;
-s#(^| )ready($| )#\1r34dy\2#g;
-s#(^| )above($| )#\1480\/3\2#g;
-s#(^| )ever($| )#\13\/3r\2#g;
-s#(^| )red($| )#\1r3d\2#g;
-s#(^| )list($| )#\11i$t\2#g;
-s#(^| )though($| )#\1th0ugh\2#g;
-s#(^| )feel($| )#\1f331\2#g;
-s#(^| )talk($| )#\1t41k\2#g;
-s#(^| )bird($| )#\18ird\2#g;
-s#(^| )soon($| )#\1$00n\2#g;
-s#(^| )body($| )#\180dy\2#g;
-s#(^| )dog($| )#\1d0g\2#g;
-s#(^| )family($| )#\1f4mi1y\2#g;
-s#(^| )direct($| )#\1dir3ct\2#g;
-s#(^| )pose($| )#\1p0$3\2#g;
-s#(^| )leave($| )#\1134\/3\2#g;
-s#(^| )song($| )#\1$0ng\2#g;
-s#(^| )measure($| )#\1m34$ur3\2#g;
-s#(^| )door($| )#\1d00r\2#g;
-s#(^| )product($| )#\1pr0duct\2#g;
-s#(^| )black($| )#\1814ck\2#g;
-s#(^| )short($| )#\1$h0rt\2#g;
-s#(^| )numeral($| )#\1num3r41\2#g;
-s#(^| )class($| )#\1c14$$\2#g;
-s#(^| )wind($| )#\1wind\2#g;
-s#(^| )question($| )#\1qu3$ti0n\2#g;
-s#(^| )happen($| )#\1h4pp3n\2#g;
-s#(^| )complete($| )#\1c0mp13t3\2#g;
-s#(^| )ship($| )#\1$hip\2#g;
-s#(^| )area($| )#\14r34\2#g;
-s#(^| )half($| )#\1h41f\2#g;
-s#(^| )rock($| )#\1r0ck\2#g;
-s#(^| )order($| )#\10rd3r\2#g;
-s#(^| )fire($| )#\1fir3\2#g;
-s#(^| )south($| )#\1$0uth\2#g;
-s#(^| )problem($| )#\1pr0813m\2#g;
-s#(^| )piece($| )#\1pi3c3\2#g;
-s#(^| )told($| )#\1t01d\2#g;
-s#(^| )knew($| )#\1kn3w\2#g;
-s#(^| )pass($| )#\1p4$$\2#g;
-s#(^| )since($| )#\1$inc3\2#g;
-s#(^| )top($| )#\1t0p\2#g;
-s#(^| )whole($| )#\1wh013\2#g;
-s#(^| )king($| )#\1king\2#g;
-s#(^| )space($| )#\1$p4c3\2#g;
-s#(^| )heard($| )#\1h34rd\2#g;
-s#(^| )best($| )#\183$t\2#g;
-s#(^| )hour($| )#\1h0ur\2#g;
-s#(^| )better($| )#\183tt3r\2#g;
-s#(^| )during($| )#\1during\2#g;
-s#(^| )hundred($| )#\1hundr3d\2#g;
-s#(^| )five($| )#\1fi\/3\2#g;
-s#(^| )remember($| )#\1r3m3m83r\2#g;
-s#(^| )step($| )#\1$t3p\2#g;
-s#(^| )early($| )#\134r1y\2#g;
-s#(^| )hold($| )#\1h01d\2#g;
-s#(^| )west($| )#\1w3$t\2#g;
-s#(^| )ground($| )#\1gr0und\2#g;
-s#(^| )interest($| )#\1int3r3$t\2#g;
-s#(^| )reach($| )#\1r34ch\2#g;
-s#(^| )fast($| )#\1f4$t\2#g;
-s#(^| )verb($| )#\1\/3r8\2#g;
-s#(^| )sing($| )#\1$ing\2#g;
-s#(^| )listen($| )#\11i$t3n\2#g;
-s#(^| )six($| )#\1$ix\2#g;
-s#(^| )table($| )#\1t4813\2#g;
-s#(^| )travel($| )#\1tr4\/31\2#g;
-s#(^| )less($| )#\113$$\2#g;
-s#(^| )morning($| )#\1m0rning\2#g;
-s#(^| )ten($| )#\1t3n\2#g;
-s#(^| )simple($| )#\1$imp13\2#g;
-s#(^| )several($| )#\1$3\/3r41\2#g;
-s#(^| )vowel($| )#\1\/0w31\2#g;
-s#(^| )toward($| )#\1t0w4rd\2#g;
-s#(^| )war($| )#\1w4r\2#g;
-s#(^| )lay($| )#\114y\2#g;
-s#(^| )against($| )#\14g4in$t\2#g;
-s#(^| )pattern($| )#\1p4tt3rn\2#g;
-s#(^| )slow($| )#\1$10w\2#g;
-s#(^| )center($| )#\1c3nt3r\2#g;
-s#(^| )love($| )#\110\/3\2#g;
-s#(^| )person($| )#\1p3r$0n\2#g;
-s#(^| )money($| )#\1m0n3y\2#g;
-s#(^| )serve($| )#\1$3r\/3\2#g;
-s#(^| )appear($| )#\14pp34r\2#g;
-s#(^| )road($| )#\1r04d\2#g;
-s#(^| )map($| )#\1m4p\2#g;
-s#(^| )rain($| )#\1r4in\2#g;
-s#(^| )rule($| )#\1ru13\2#g;
-s#(^| )govern($| )#\1g0\/3rn\2#g;
-s#(^| )pull($| )#\1pu11\2#g;
-s#(^| )cold($| )#\1c01d\2#g;
-s#(^| )notice($| )#\1n0tic3\2#g;
-s#(^| )voice($| )#\1\/0ic3\2#g;
-s#(^| )unit($| )#\1unit\2#g;
-s#(^| )power($| )#\1p0w3r\2#g;
-s#(^| )town($| )#\1t0wn\2#g;
-s#(^| )fine($| )#\1fin3\2#g;
-s#(^| )certain($| )#\1c3rt4in\2#g;
-s#(^| )fly($| )#\1f1y\2#g;
-s#(^| )fall($| )#\1f411\2#g;
-s#(^| )lead($| )#\1134d\2#g;
-s#(^| )cry($| )#\1cry\2#g;
-s#(^| )dark($| )#\1d4rk\2#g;
-s#(^| )machine($| )#\1m4chin3\2#g;
-s#(^| )note($| )#\1n0t3\2#g;
-s#(^| )wait($| )#\1w4it\2#g;
-s#(^| )plan($| )#\1p14n\2#g;
-s#(^| )figure($| )#\1figur3\2#g;
-s#(^| )star($| )#\1$t4r\2#g;
-s#(^| )box($| )#\180x\2#g;
-s#(^| )noun($| )#\1n0un\2#g;
-s#(^| )field($| )#\1fi31d\2#g;
-s#(^| )rest($| )#\1r3$t\2#g;
-s#(^| )correct($| )#\1c0rr3ct\2#g;
-s#(^| )able($| )#\14813\2#g;
-s#(^| )pound($| )#\1p0und\2#g;
-s#(^| )done($| )#\1d0n3\2#g;
-s#(^| )beauty($| )#\1834uty\2#g;
-s#(^| )drive($| )#\1dri\/3\2#g;
-s#(^| )stood($| )#\1$t00d\2#g;
-s#(^| )contain($| )#\1c0nt4in\2#g;
-s#(^| )front($| )#\1fr0nt\2#g;
-s#(^| )teach($| )#\1t34ch\2#g;
-s#(^| )week($| )#\1w33k\2#g;
-s#(^| )final($| )#\1fin41\2#g;
-s#(^| )gave($| )#\1g4\/3\2#g;
-s#(^| )green($| )#\1gr33n\2#g;
-s#(^| )oh($| )#\10h\2#g;
-s#(^| )quick($| )#\1quick\2#g;
-s#(^| )develop($| )#\1d3\/310p\2#g;
-s#(^| )ocean($| )#\10c34n\2#g;
-s#(^| )warm($| )#\1w4rm\2#g;
-s#(^| )free($| )#\1fr33\2#g;
-s#(^| )minute($| )#\1minut3\2#g;
-s#(^| )strong($| )#\1$tr0ng\2#g;
-s#(^| )special($| )#\1$p3ci41\2#g;
-s#(^| )mind($| )#\1mind\2#g;
-s#(^| )behind($| )#\183hind\2#g;
-s#(^| )clear($| )#\1c134r\2#g;
-s#(^| )tail($| )#\1t4i1\2#g;
-s#(^| )produce($| )#\1pr0duc3\2#g;
-s#(^| )fact($| )#\1f4ct\2#g;
-s#(^| )street($| )#\1$tr33t\2#g;
-s#(^| )inch($| )#\1inch\2#g;
-s#(^| )multiply($| )#\1mu1tip1y\2#g;
-s#(^| )nothing($| )#\1n0thing\2#g;
-s#(^| )course($| )#\1c0ur$3\2#g;
-s#(^| )stay($| )#\1$t4y\2#g;
-s#(^| )wheel($| )#\1wh331\2#g;
-s#(^| )full($| )#\1fu11\2#g;
-s#(^| )force($| )#\14c3\2#g;
-s#(^| )blue($| )#\181u3\2#g;
-s#(^| )object($| )#\108j3ct\2#g;
-s#(^| )decide($| )#\1d3cid3\2#g;
-s#(^| )surface($| )#\1$urf4c3\2#g;
-s#(^| )deep($| )#\1d33p\2#g;
-s#(^| )moon($| )#\1m00n\2#g;
-s#(^| )island($| )#\1i$14nd\2#g;
-s#(^| )foot($| )#\1f00t\2#g;
-s#(^| )system($| )#\1$y$t3m\2#g;
-s#(^| )busy($| )#\18u$y\2#g;
-s#(^| )test($| )#\1t3$t\2#g;
-s#(^| )record($| )#\1r3c0rd\2#g;
-s#(^| )boat($| )#\1804t\2#g;
-s#(^| )common($| )#\1c0mm0n\2#g;
-s#(^| )gold($| )#\1g01d\2#g;
-s#(^| )possible($| )#\1p0$$i813\2#g;
-s#(^| )plane($| )#\1p14n3\2#g;
-s#(^| )stead($| )#\1$t34d\2#g;
-s#(^| )dry($| )#\1dry\2#g;
-s#(^| )wonder($| )#\1w0nd3r\2#g;
-s#(^| )laugh($| )#\114ugh\2#g;
-s#(^| )thousand($| )#\1th0u$4nd\2#g;
-s#(^| )ago($| )#\14g0\2#g;
-s#(^| )ran($| )#\1r4n\2#g;
-s#(^| )check($| )#\1ch3ck\2#g;
-s#(^| )game($| )#\1g4m3\2#g;
-s#(^| )shape($| )#\1$h4p3\2#g;
-s#(^| )equate($| )#\13qu4t3\2#g;
-s#(^| )hot($| )#\1h0t\2#g;
-s#(^| )miss($| )#\1mi$$\2#g;
-s#(^| )brought($| )#\18r0ught\2#g;
-s#(^| )heat($| )#\1h34t\2#g;
-s#(^| )snow($| )#\1$n0w\2#g;
-s#(^| )tire($| )#\1tir3\2#g;
-s#(^| )bring($| )#\18ring\2#g;
-s#(^| )yes($| )#\1y3$\2#g;
-s#(^| )distant($| )#\1di$t4nt\2#g;
-s#(^| )fill($| )#\1fi11\2#g;
-s#(^| )east($| )#\134$t\2#g;
-s#(^| )paint($| )#\1p4int\2#g;
-s#(^| )language($| )#\114ngu4g3\2#g;
-s#(^| )among($| )#\14m0ng\2#g;
-s#(^| )grand($| )#\1gr4nd\2#g;
-s#(^| )ball($| )#\18411\2#g;
-s#(^| )yet($| )#\1y3t\2#g;
-s#(^| )wave($| )#\1w4\/3\2#g;
-s#(^| )drop($| )#\1dr0p\2#g;
-s#(^| )heart($| )#\1h34rt\2#g;
-s#(^| )am($| )#\14m\2#g;
-s#(^| )present($| )#\1pr3$3nt\2#g;
-s#(^| )heavy($| )#\1h34\/y\2#g;
-s#(^| )dance($| )#\1d4nc3\2#g;
-s#(^| )engine($| )#\13ngin3\2#g;
-s#(^| )position($| )#\1p0$iti0n\2#g;
-s#(^| )arm($| )#\14rm\2#g;
-s#(^| )wide($| )#\1wid3\2#g;
-s#(^| )sail($| )#\1$4i1\2#g;
-s#(^| )material($| )#\1m4t3ri41\2#g;
-s#(^| )size($| )#\1$iz3\2#g;
-s#(^| )vary($| )#\1\/4ry\2#g;
-s#(^| )settle($| )#\1$3tt13\2#g;
-s#(^| )speak($| )#\1$p34k\2#g;
-s#(^| )weight($| )#\1w3ight\2#g;
-s#(^| )general($| )#\1g3n3r41\2#g;
-s#(^| )ice($| )#\1ic3\2#g;
-s#(^| )matter($| )#\1m4tt3r\2#g;
-s#(^| )circle($| )#\1circ13\2#g;
-s#(^| )pair($| )#\1p4ir\2#g;
-s#(^| )include($| )#\1inc1ud3\2#g;
-s#(^| )divide($| )#\1di\/id3\2#g;
-s#(^| )syllable($| )#\1$y114813\2#g;
-s#(^| )felt($| )#\1f31t\2#g;
-s#(^| )perhaps($| )#\1p3rh4p$\2#g;
-s#(^| )pick($| )#\1pick\2#g;
-s#(^| )sudden($| )#\1$udd3n\2#g;
-s#(^| )count($| )#\1c0unt\2#g;
-s#(^| )square($| )#\1$qu4r3\2#g;
-s#(^| )reason($| )#\1r34$0n\2#g;
-s#(^| )length($| )#\113ngth\2#g;
-s#(^| )represent($| )#\1r3pr3$3nt\2#g;
-s#(^| )art($| )#\14rt\2#g;
-s#(^| )subject($| )#\1$u8j3ct\2#g;
-s#(^| )region($| )#\1r3gi0n\2#g;
-s#(^| )energy($| )#\13n3rgy\2#g;
-s#(^| )hunt($| )#\1hunt\2#g;
-s#(^| )probable($| )#\1pr084813\2#g;
-s#(^| )bed($| )#\183d\2#g;
-s#(^| )brother($| )#\18r0th3r\2#g;
-s#(^| )egg($| )#\13gg\2#g;
-s#(^| )ride($| )#\1rid3\2#g;
-s#(^| )cell($| )#\1c311\2#g;
-s#(^| )believe($| )#\1831i3\/3\2#g;
-s#(^| )fraction($| )#\1fr4cti0n\2#g;
-s#(^| )forest($| )#\143$t\2#g;
-s#(^| )sit($| )#\1$it\2#g;
-s#(^| )race($| )#\1r4c3\2#g;
-s#(^| )window($| )#\1wind0w\2#g;
-s#(^| )store($| )#\1$t0r3\2#g;
-s#(^| )summer($| )#\1$umm3r\2#g;
-s#(^| )train($| )#\1tr4in\2#g;
-s#(^| )sleep($| )#\1$133p\2#g;
-s#(^| )prove($| )#\1pr0\/3\2#g;
-s#(^| )lone($| )#\110n3\2#g;
-s#(^| )leg($| )#\113g\2#g;
-s#(^| )exercise($| )#\13x3rci$3\2#g;
-s#(^| )wall($| )#\1w411\2#g;
-s#(^| )catch($| )#\1c4tch\2#g;
-s#(^| )mount($| )#\1m0unt\2#g;
-s#(^| )wish($| )#\1wi$h\2#g;
-s#(^| )sky($| )#\1$ky\2#g;
-s#(^| )board($| )#\1804rd\2#g;
-s#(^| )joy($| )#\1j0y\2#g;
-s#(^| )winter($| )#\1wint3r\2#g;
-s#(^| )sat($| )#\1$4t\2#g;
-s#(^| )written($| )#\1writt3n\2#g;
-s#(^| )wild($| )#\1wi1d\2#g;
-s#(^| )instrument($| )#\1in$trum3nt\2#g;
-s#(^| )kept($| )#\1k3pt\2#g;
-s#(^| )glass($| )#\1g14$$\2#g;
-s#(^| )grass($| )#\1gr4$$\2#g;
-s#(^| )cow($| )#\1c0w\2#g;
-s#(^| )job($| )#\1j08\2#g;
-s#(^| )edge($| )#\13dg3\2#g;
-s#(^| )sign($| )#\1$ign\2#g;
-s#(^| )visit($| )#\1\/i$it\2#g;
-s#(^| )past($| )#\1p4$t\2#g;
-s#(^| )soft($| )#\1$0ft\2#g;
-s#(^| )fun($| )#\1fun\2#g;
-s#(^| )bright($| )#\18right\2#g;
-s#(^| )gas($| )#\1g4$\2#g;
-s#(^| )weather($| )#\1w34th3r\2#g;
-s#(^| )month($| )#\1m0nth\2#g;
-s#(^| )million($| )#\1mi11i0n\2#g;
-s#(^| )bear($| )#\1834r\2#g;
-s#(^| )finish($| )#\1fini$h\2#g;
-s#(^| )happy($| )#\1h4ppy\2#g;
-s#(^| )hope($| )#\1h0p3\2#g;
-s#(^| )flower($| )#\1f10w3r\2#g;
-s#(^| )clothe($| )#\1c10th3\2#g;
-s#(^| )strange($| )#\1$tr4ng3\2#g;
-s#(^| )gone($| )#\1g0n3\2#g;
-s#(^| )jump($| )#\1jump\2#g;
-s#(^| )baby($| )#\1848y\2#g;
-s#(^| )eight($| )#\13ight\2#g;
-s#(^| )village($| )#\1\/i114g3\2#g;
-s#(^| )meet($| )#\1m33t\2#g;
-s#(^| )root($| )#\1r00t\2#g;
-s#(^| )buy($| )#\18uy\2#g;
-s#(^| )raise($| )#\1r4i$3\2#g;
-s#(^| )solve($| )#\1$01\/3\2#g;
-s#(^| )metal($| )#\1m3t41\2#g;
-s#(^| )whether($| )#\1wh3th3r\2#g;
-s#(^| )push($| )#\1pu$h\2#g;
-s#(^| )seven($| )#\1$3\/3n\2#g;
-s#(^| )paragraph($| )#\1p4r4gr4ph\2#g;
-s#(^| )third($| )#\1third\2#g;
-s#(^| )shall($| )#\1$h411\2#g;
-s#(^| )held($| )#\1h31d\2#g;
-s#(^| )hair($| )#\1h4ir\2#g;
-s#(^| )describe($| )#\1d3$cri83\2#g;
-s#(^| )cook($| )#\1c00k\2#g;
-s#(^| )floor($| )#\1f100r\2#g;
-s#(^| )either($| )#\13ith3r\2#g;
-s#(^| )result($| )#\1r3$u1t\2#g;
-s#(^| )burn($| )#\18urn\2#g;
-s#(^| )hill($| )#\1hi11\2#g;
-s#(^| )safe($| )#\1$4f3\2#g;
-s#(^| )cat($| )#\1c4t\2#g;
-s#(^| )century($| )#\1c3ntury\2#g;
-s#(^| )consider($| )#\1c0n$id3r\2#g;
-s#(^| )type($| )#\1typ3\2#g;
-s#(^| )law($| )#\114w\2#g;
-s#(^| )bit($| )#\18it\2#g;
-s#(^| )coast($| )#\1c04$t\2#g;
-s#(^| )copy($| )#\1c0py\2#g;
-s#(^| )phrase($| )#\1phr4$3\2#g;
-s#(^| )silent($| )#\1$i13nt\2#g;
-s#(^| )tall($| )#\1t411\2#g;
-s#(^| )sand($| )#\1$4nd\2#g;
-s#(^| )soil($| )#\1$0i1\2#g;
-s#(^| )roll($| )#\1r011\2#g;
-s#(^| )temperature($| )#\1t3mp3r4tur3\2#g;
-s#(^| )finger($| )#\1fing3r\2#g;
-s#(^| )industry($| )#\1indu$try\2#g;
-s#(^| )value($| )#\1\/41u3\2#g;
-s#(^| )fight($| )#\1fight\2#g;
-s#(^| )lie($| )#\11i3\2#g;
-s#(^| )beat($| )#\1834t\2#g;
-s#(^| )excite($| )#\13xcit3\2#g;
-s#(^| )natural($| )#\1n4tur41\2#g;
-s#(^| )view($| )#\1\/i3w\2#g;
-s#(^| )sense($| )#\1$3n$3\2#g;
-s#(^| )ear($| )#\134r\2#g;
-s#(^| )else($| )#\131$3\2#g;
-s#(^| )quite($| )#\1quit3\2#g;
-s#(^| )broke($| )#\18r0k3\2#g;
-s#(^| )case($| )#\1c4$3\2#g;
-s#(^| )middle($| )#\1midd13\2#g;
-s#(^| )kill($| )#\1ki11\2#g;
-s#(^| )son($| )#\1$0n\2#g;
-s#(^| )lake($| )#\114k3\2#g;
-s#(^| )moment($| )#\1m0m3nt\2#g;
-s#(^| )scale($| )#\1$c413\2#g;
-s#(^| )loud($| )#\110ud\2#g;
-s#(^| )spring($| )#\1$pring\2#g;
-s#(^| )observe($| )#\108$3r\/3\2#g;
-s#(^| )child($| )#\1chi1d\2#g;
-s#(^| )straight($| )#\1$tr4ight\2#g;
-s#(^| )consonant($| )#\1c0n$0n4nt\2#g;
-s#(^| )nation($| )#\1n4ti0n\2#g;
-s#(^| )dictionary($| )#\1dicti0n4ry\2#g;
-s#(^| )milk($| )#\1mi1k\2#g;
-s#(^| )speed($| )#\1$p33d\2#g;
-s#(^| )method($| )#\1m3th0d\2#g;
-s#(^| )organ($| )#\10rg4n\2#g;
-s#(^| )pay($| )#\1p4y\2#g;
-s#(^| )age($| )#\14g3\2#g;
-s#(^| )section($| )#\1$3cti0n\2#g;
-s#(^| )dress($| )#\1dr3$$\2#g;
-s#(^| )cloud($| )#\1c10ud\2#g;
-s#(^| )surprise($| )#\1$urpri$3\2#g;
-s#(^| )quiet($| )#\1qui3t\2#g;
-s#(^| )stone($| )#\1$t0n3\2#g;
-s#(^| )tiny($| )#\1tiny\2#g;
-s#(^| )climb($| )#\1c1im8\2#g;
-s#(^| )cool($| )#\1c001\2#g;
-s#(^| )design($| )#\1d3$ign\2#g;
-s#(^| )poor($| )#\1p00r\2#g;
-s#(^| )lot($| )#\110t\2#g;
-s#(^| )experiment($| )#\13xp3rim3nt\2#g;
-s#(^| )bottom($| )#\180tt0m\2#g;
-s#(^| )key($| )#\1k3y\2#g;
-s#(^| )iron($| )#\1ir0n\2#g;
-s#(^| )single($| )#\1$ing13\2#g;
-s#(^| )stick($| )#\1$tick\2#g;
-s#(^| )flat($| )#\1f14t\2#g;
-s#(^| )twenty($| )#\1tw3nty\2#g;
-s#(^| )skin($| )#\1$kin\2#g;
-s#(^| )smile($| )#\1$mi13\2#g;
-s#(^| )crease($| )#\1cr34$3\2#g;
-s#(^| )hole($| )#\1h013\2#g;
-s#(^| )trade($| )#\1tr4d3\2#g;
-s#(^| )melody($| )#\1m310dy\2#g;
-s#(^| )trip($| )#\1trip\2#g;
-s#(^| )office($| )#\10ffic3\2#g;
-s#(^| )receive($| )#\1r3c3i\/3\2#g;
-s#(^| )row($| )#\1r0w\2#g;
-s#(^| )mouth($| )#\1m0uth\2#g;
-s#(^| )exact($| )#\13x4ct\2#g;
-s#(^| )symbol($| )#\1$ym801\2#g;
-s#(^| )die($| )#\1di3\2#g;
-s#(^| )least($| )#\1134$t\2#g;
-s#(^| )trouble($| )#\1tr0u813\2#g;
-s#(^| )shout($| )#\1$h0ut\2#g;
-s#(^| )except($| )#\13xc3pt\2#g;
-s#(^| )wrote($| )#\1wr0t3\2#g;
-s#(^| )seed($| )#\1$33d\2#g;
-s#(^| )tone($| )#\1t0n3\2#g;
-s#(^| )join($| )#\1j0in\2#g;
-s#(^| )suggest($| )#\1$ugg3$t\2#g;
-s#(^| )clean($| )#\1c134n\2#g;
-s#(^| )break($| )#\18r34k\2#g;
-s#(^| )lady($| )#\114dy\2#g;
-s#(^| )yard($| )#\1y4rd\2#g;
-s#(^| )rise($| )#\1ri$3\2#g;
-s#(^| )bad($| )#\184d\2#g;
-s#(^| )blow($| )#\1810w\2#g;
-s#(^| )oil($| )#\10i1\2#g;
-s#(^| )blood($| )#\18100d\2#g;
-s#(^| )touch($| )#\1t0uch\2#g;
-s#(^| )grew($| )#\1gr3w\2#g;
-s#(^| )cent($| )#\1c3nt\2#g;
-s#(^| )mix($| )#\1mix\2#g;
-s#(^| )team($| )#\1t34m\2#g;
-s#(^| )wire($| )#\1wir3\2#g;
-s#(^| )cost($| )#\1c0$t\2#g;
-s#(^| )lost($| )#\110$t\2#g;
-s#(^| )brown($| )#\18r0wn\2#g;
-s#(^| )wear($| )#\1w34r\2#g;
-s#(^| )garden($| )#\1g4rd3n\2#g;
-s#(^| )equal($| )#\13qu41\2#g;
-s#(^| )sent($| )#\1$3nt\2#g;
-s#(^| )choose($| )#\1ch00$3\2#g;
-s#(^| )fell($| )#\1f311\2#g;
-s#(^| )fit($| )#\1fit\2#g;
-s#(^| )flow($| )#\1f10w\2#g;
-s#(^| )fair($| )#\1f4ir\2#g;
-s#(^| )bank($| )#\184nk\2#g;
-s#(^| )collect($| )#\1c0113ct\2#g;
-s#(^| )save($| )#\1$4\/3\2#g;
-s#(^| )control($| )#\1c0ntr01\2#g;
-s#(^| )decimal($| )#\1d3cim41\2#g;
-s#(^| )gentle($| )#\1g3nt13\2#g;
-s#(^| )woman($| )#\1w0m4n\2#g;
-s#(^| )captain($| )#\1c4pt4in\2#g;
-s#(^| )practice($| )#\1pr4ctic3\2#g;
-s#(^| )separate($| )#\1$3p4r4t3\2#g;
-s#(^| )difficult($| )#\1difficu1t\2#g;
-s#(^| )doctor($| )#\1d0ct0r\2#g;
-s#(^| )please($| )#\1p134$3\2#g;
-s#(^| )protect($| )#\1pr0t3ct\2#g;
-s#(^| )noon($| )#\1n00n\2#g;
-s#(^| )whose($| )#\1wh0$3\2#g;
-s#(^| )locate($| )#\110c4t3\2#g;
-s#(^| )ring($| )#\1ring\2#g;
-s#(^| )character($| )#\1ch4r4ct3r\2#g;
-s#(^| )insect($| )#\1in$3ct\2#g;
-s#(^| )caught($| )#\1c4ught\2#g;
-s#(^| )period($| )#\1p3ri0d\2#g;
-s#(^| )indicate($| )#\1indic4t3\2#g;
-s#(^| )radio($| )#\1r4di0\2#g;
-s#(^| )spoke($| )#\1$p0k3\2#g;
-s#(^| )atom($| )#\14t0m\2#g;
-s#(^| )human($| )#\1hum4n\2#g;
-s#(^| )history($| )#\1hi$t0ry\2#g;
-s#(^| )effect($| )#\13ff3ct\2#g;
-s#(^| )electric($| )#\1313ctric\2#g;
-s#(^| )expect($| )#\13xp3ct\2#g;
-s#(^| )crop($| )#\1cr0p\2#g;
-s#(^| )modern($| )#\1m0d3rn\2#g;
-s#(^| )element($| )#\1313m3nt\2#g;
-s#(^| )hit($| )#\1hit\2#g;
-s#(^| )student($| )#\1$tud3nt\2#g;
-s#(^| )corner($| )#\1c0rn3r\2#g;
-s#(^| )party($| )#\1p4rty\2#g;
-s#(^| )supply($| )#\1$upp1y\2#g;
-s#(^| )bone($| )#\180n3\2#g;
-s#(^| )rail($| )#\1r4i1\2#g;
-s#(^| )imagine($| )#\1im4gin3\2#g;
-s#(^| )provide($| )#\1pr0\/id3\2#g;
-s#(^| )agree($| )#\14gr33\2#g;
-s#(^| )thus($| )#\1thu$\2#g;
-s#(^| )capital($| )#\1c4pit41\2#g;
-s#(^| )won't($| )#\1w0n't\2#g;
-s#(^| )chair($| )#\1ch4ir\2#g;
-s#(^| )danger($| )#\1d4ng3r\2#g;
-s#(^| )fruit($| )#\1fruit\2#g;
-s#(^| )rich($| )#\1rich\2#g;
-s#(^| )thick($| )#\1thick\2#g;
-s#(^| )soldier($| )#\1$01di3r\2#g;
-s#(^| )process($| )#\1pr0c3$$\2#g;
-s#(^| )operate($| )#\10p3r4t3\2#g;
-s#(^| )guess($| )#\1gu3$$\2#g;
-s#(^| )necessary($| )#\1n3c3$$4ry\2#g;
-s#(^| )sharp($| )#\1$h4rp\2#g;
-s#(^| )wing($| )#\1wing\2#g;
-s#(^| )create($| )#\1cr34t3\2#g;
-s#(^| )neighbor($| )#\1n3igh80r\2#g;
-s#(^| )wash($| )#\1w4$h\2#g;
-s#(^| )bat($| )#\184t\2#g;
-s#(^| )rather($| )#\1r4th3r\2#g;
-s#(^| )crowd($| )#\1cr0wd\2#g;
-s#(^| )corn($| )#\1c0rn\2#g;
-s#(^| )compare($| )#\1c0mp4r3\2#g;
-s#(^| )poem($| )#\1p03m\2#g;
-s#(^| )string($| )#\1$tring\2#g;
-s#(^| )bell($| )#\18311\2#g;
-s#(^| )depend($| )#\1d3p3nd\2#g;
-s#(^| )meat($| )#\1m34t\2#g;
-s#(^| )rub($| )#\1ru8\2#g;
-s#(^| )tube($| )#\1tu83\2#g;
-s#(^| )famous($| )#\1f4m0u$\2#g;
-s#(^| )dollar($| )#\1d0114r\2#g;
-s#(^| )stream($| )#\1$tr34m\2#g;
-s#(^| )fear($| )#\1f34r\2#g;
-s#(^| )sight($| )#\1$ight\2#g;
-s#(^| )thin($| )#\1thin\2#g;
-s#(^| )triangle($| )#\1tri4ng13\2#g;
-s#(^| )planet($| )#\1p14n3t\2#g;
-s#(^| )hurry($| )#\1hurry\2#g;
-s#(^| )chief($| )#\1chi3f\2#g;
-s#(^| )colony($| )#\1c010ny\2#g;
-s#(^| )clock($| )#\1c10ck\2#g;
-s#(^| )mine($| )#\1min3\2#g;
-s#(^| )tie($| )#\1ti3\2#g;
-s#(^| )enter($| )#\13nt3r\2#g;
-s#(^| )major($| )#\1m4j0r\2#g;
-s#(^| )fresh($| )#\1fr3$h\2#g;
-s#(^| )search($| )#\1$34rch\2#g;
-s#(^| )send($| )#\1$3nd\2#g;
-s#(^| )yellow($| )#\1y3110w\2#g;
-s#(^| )gun($| )#\1gun\2#g;
-s#(^| )allow($| )#\14110w\2#g;
-s#(^| )print($| )#\1print\2#g;
-s#(^| )dead($| )#\1d34d\2#g;
-s#(^| )spot($| )#\1$p0t\2#g;
-s#(^| )desert($| )#\1d3$3rt\2#g;
-s#(^| )suit($| )#\1$uit\2#g;
-s#(^| )current($| )#\1curr3nt\2#g;
-s#(^| )lift($| )#\11ift\2#g;
-s#(^| )rose($| )#\1r0$3\2#g;
-s#(^| )continue($| )#\1c0ntinu3\2#g;
-s#(^| )block($| )#\1810ck\2#g;
-s#(^| )chart($| )#\1ch4rt\2#g;
-s#(^| )hat($| )#\1h4t\2#g;
-s#(^| )sell($| )#\1$311\2#g;
-s#(^| )success($| )#\1$ucc3$$\2#g;
-s#(^| )company($| )#\1c0mp4ny\2#g;
-s#(^| )subtract($| )#\1$u8tr4ct\2#g;
-s#(^| )event($| )#\13\/3nt\2#g;
-s#(^| )particular($| )#\1p4rticu14r\2#g;
-s#(^| )deal($| )#\1d341\2#g;
-s#(^| )swim($| )#\1$wim\2#g;
-s#(^| )term($| )#\1t3rm\2#g;
-s#(^| )opposite($| )#\10pp0$it3\2#g;
-s#(^| )wife($| )#\1wif3\2#g;
-s#(^| )shoe($| )#\1$h03\2#g;
-s#(^| )shoulder($| )#\1$h0u1d3r\2#g;
-s#(^| )spread($| )#\1$pr34d\2#g;
-s#(^| )arrange($| )#\14rr4ng3\2#g;
-s#(^| )camp($| )#\1c4mp\2#g;
-s#(^| )invent($| )#\1in\/3nt\2#g;
-s#(^| )cotton($| )#\1c0tt0n\2#g;
-s#(^| )born($| )#\180rn\2#g;
-s#(^| )determine($| )#\1d3t3rmin3\2#g;
-s#(^| )quart($| )#\1qu4rt\2#g;
-s#(^| )nine($| )#\1nin3\2#g;
-s#(^| )truck($| )#\1truck\2#g;
-s#(^| )noise($| )#\1n0i$3\2#g;
-s#(^| )level($| )#\113\/31\2#g;
-s#(^| )chance($| )#\1ch4nc3\2#g;
-s#(^| )gather($| )#\1g4th3r\2#g;
-s#(^| )shop($| )#\1$h0p\2#g;
-s#(^| )stretch($| )#\1$tr3tch\2#g;
-s#(^| )throw($| )#\1thr0w\2#g;
-s#(^| )shine($| )#\1$hin3\2#g;
-s#(^| )property($| )#\1pr0p3rty\2#g;
-s#(^| )column($| )#\1c01umn\2#g;
-s#(^| )molecule($| )#\1m013cu13\2#g;
-s#(^| )select($| )#\1$313ct\2#g;
-s#(^| )wrong($| )#\1wr0ng\2#g;
-s#(^| )gray($| )#\1gr4y\2#g;
-s#(^| )repeat($| )#\1r3p34t\2#g;
-s#(^| )require($| )#\1r3quir3\2#g;
-s#(^| )broad($| )#\18r04d\2#g;
-s#(^| )prepare($| )#\1pr3p4r3\2#g;
-s#(^| )salt($| )#\1$41t\2#g;
-s#(^| )nose($| )#\1n0$3\2#g;
-s#(^| )plural($| )#\1p1ur41\2#g;
-s#(^| )anger($| )#\14ng3r\2#g;
-s#(^| )claim($| )#\1c14im\2#g;
-s#(^| )continent($| )#\1c0ntin3nt\2#g;
-s#(^| )oxygen($| )#\10xyg3n\2#g;
-s#(^| )sugar($| )#\1$ug4r\2#g;
-s#(^| )death($| )#\1d34th\2#g;
-s#(^| )pretty($| )#\1pr3tty\2#g;
-s#(^| )skill($| )#\1$ki11\2#g;
-s#(^| )women($| )#\1w0m3n\2#g;
-s#(^| )season($| )#\1$34$0n\2#g;
-s#(^| )solution($| )#\1$01uti0n\2#g;
-s#(^| )magnet($| )#\1m4gn3t\2#g;
-s#(^| )silver($| )#\1$i1\/3r\2#g;
-s#(^| )thank($| )#\1th4nk\2#g;
-s#(^| )branch($| )#\18r4nch\2#g;
-s#(^| )match($| )#\1m4tch\2#g;
-s#(^| )suffix($| )#\1$uffix\2#g;
-s#(^| )especially($| )#\13$p3ci411y\2#g;
-s#(^| )fig($| )#\1fig\2#g;
-s#(^| )afraid($| )#\14fr4id\2#g;
-s#(^| )huge($| )#\1hug3\2#g;
-s#(^| )sister($| )#\1$i$t3r\2#g;
-s#(^| )steel($| )#\1$t331\2#g;
-s#(^| )discuss($| )#\1di$cu$$\2#g;
-s#(^| )forward($| )#\14w4rd\2#g;
-s#(^| )similar($| )#\1$imi14r\2#g;
-s#(^| )guide($| )#\1guid3\2#g;
-s#(^| )experience($| )#\13xp3ri3nc3\2#g;
-s#(^| )score($| )#\1$c0r3\2#g;
-s#(^| )apple($| )#\14pp13\2#g;
-s#(^| )bought($| )#\180ught\2#g;
-s#(^| )led($| )#\113d\2#g;
-s#(^| )pitch($| )#\1pitch\2#g;
-s#(^| )coat($| )#\1c04t\2#g;
-s#(^| )mass($| )#\1m4$$\2#g;
-s#(^| )card($| )#\1c4rd\2#g;
-s#(^| )band($| )#\184nd\2#g;
-s#(^| )rope($| )#\1r0p3\2#g;
-s#(^| )slip($| )#\1$1ip\2#g;
-s#(^| )win($| )#\1win\2#g;
-s#(^| )dream($| )#\1dr34m\2#g;
-s#(^| )evening($| )#\13\/3ning\2#g;
-s#(^| )condition($| )#\1c0nditi0n\2#g;
-s#(^| )feed($| )#\1f33d\2#g;
-s#(^| )tool($| )#\1t001\2#g;
-s#(^| )total($| )#\1t0t41\2#g;
-s#(^| )basic($| )#\184$ic\2#g;
-s#(^| )smell($| )#\1$m311\2#g;
-s#(^| )valley($| )#\1\/4113y\2#g;
-s#(^| )nor($| )#\1n0r\2#g;
-s#(^| )double($| )#\1d0u813\2#g;
-s#(^| )seat($| )#\1$34t\2#g;
-s#(^| )arrive($| )#\14rri\/3\2#g;
-s#(^| )master($| )#\1m4$t3r\2#g;
-s#(^| )track($| )#\1tr4ck\2#g;
-s#(^| )parent($| )#\1p4r3nt\2#g;
-s#(^| )shore($| )#\1$h0r3\2#g;
-s#(^| )division($| )#\1di\/i$i0n\2#g;
-s#(^| )sheet($| )#\1$h33t\2#g;
-s#(^| )substance($| )#\1$u8$t4nc3\2#g;
-s#(^| )favor($| )#\1f4\/0r\2#g;
-s#(^| )connect($| )#\1c0nn3ct\2#g;
-s#(^| )post($| )#\1p0$t\2#g;
-s#(^| )spend($| )#\1$p3nd\2#g;
-s#(^| )chord($| )#\1ch0rd\2#g;
-s#(^| )fat($| )#\1f4t\2#g;
-s#(^| )glad($| )#\1g14d\2#g;
-s#(^| )original($| )#\10rigin41\2#g;
-s#(^| )share($| )#\1$h4r3\2#g;
-s#(^| )station($| )#\1$t4ti0n\2#g;
-s#(^| )dad($| )#\1d4d\2#g;
-s#(^| )bread($| )#\18r34d\2#g;
-s#(^| )charge($| )#\1ch4rg3\2#g;
-s#(^| )proper($| )#\1pr0p3r\2#g;
-s#(^| )bar($| )#\184r\2#g;
-s#(^| )offer($| )#\10ff3r\2#g;
-s#(^| )segment($| )#\1$3gm3nt\2#g;
-s#(^| )slave($| )#\1$14\/3\2#g;
-s#(^| )duck($| )#\1duck\2#g;
-s#(^| )instant($| )#\1in$t4nt\2#g;
-s#(^| )market($| )#\1m4rk3t\2#g;
-s#(^| )degree($| )#\1d3gr33\2#g;
-s#(^| )populate($| )#\1p0pu14t3\2#g;
-s#(^| )chick($| )#\1chick\2#g;
-s#(^| )dear($| )#\1d34r\2#g;
-s#(^| )enemy($| )#\13n3my\2#g;
-s#(^| )reply($| )#\1r3p1y\2#g;
-s#(^| )drink($| )#\1drink\2#g;
-s#(^| )occur($| )#\10ccur\2#g;
-s#(^| )support($| )#\1$upp0rt\2#g;
-s#(^| )speech($| )#\1$p33ch\2#g;
-s#(^| )nature($| )#\1n4tur3\2#g;
-s#(^| )range($| )#\1r4ng3\2#g;
-s#(^| )steam($| )#\1$t34m\2#g;
-s#(^| )motion($| )#\1m0ti0n\2#g;
-s#(^| )path($| )#\1p4th\2#g;
-s#(^| )liquid($| )#\11iquid\2#g;
-s#(^| )log($| )#\110g\2#g;
-s#(^| )meant($| )#\1m34nt\2#g;
-s#(^| )quotient($| )#\1qu0ti3nt\2#g;
-s#(^| )teeth($| )#\1t33th\2#g;
-s#(^| )shell($| )#\1$h311\2#g;
-s#(^| )neck($| )#\1n3ck\2#g;
+s|\bthe\b|v|g
+s|\bbe\b|byt'|g
+s|\bof\b|iz|g
+s|\band\b|i|g
+s|\ba\b|v|g
+s|\bto\b|k|g
+s|\bin\b|v|g
+s|\bhe\b|on|g
+s|\bhave\b|est'|g
+s|\bit\b|on|g
+s|\bthat\b|chto|g
+s|\bfor\b|dlja|g
+s|\bthey\b|oni|g
+s|\bi\b|Ja|g
+s|\bwith\b|s|g
+s|\bas\b|kak|g
+s|\bnot\b|ne|g
+s|\bon\b|na|g
+s|\bshe\b|ona|g
+s|\bat\b|v|g
+s|\bby\b|po|g
+s|\bthis\b|eto|g
+s|\bwe\b|my|g
+s|\byou\b|vy|g
+s|\bdo\b|delat'|g
+s|\bbut\b|no|g
+s|\bfrom\b|ot|g
+s|\bor\b|ili|g
+s|\bwhich\b|kotoryj|g
+s|\bone\b|odin|g
+s|\bwould\b|budet|g
+s|\ball\b|vse|g
+s|\bwill\b|budet|g
+s|\bthere\b|tam|g
+s|\bsay\b|skazat'|g
+s|\bwho\b|kto|g
+s|\bmake\b|sdelat'|g
+s|\bwhen\b|kogda|g
+s|\bcan\b|mozhet|g
+s|\bmore\b|podrobnee|g
+s|\bif\b|esli|g
+s|\bno\b|net|g
+s|\bman\b|chelovek|g
+s|\bout\b|nash|g
+s|\bother\b|drugie|g
+s|\bso\b|tak|g
+s|\bwhat\b|chto|g
+s|\btime\b|vremja|g
+s|\bup\b|do|g
+s|\bgo\b|idi|g
+s|\babout\b|o|g
+s|\bthan\b|chem|g
+s|\binto\b|v|g
+s|\bcould\b|mozhet|g
+s|\bstate\b|gosudarstvo|g
+s|\bonly\b|tol'ko|g
+s|\bnew\b|novye|g
+s|\byear\b|god|g
+s|\bsome\b|nekotorye|g
+s|\btake\b|vzjat'|g
+s|\bcome\b|prihodite|g
+s|\bthese\b|eti|g
+s|\bknow\b|znaju|g
+s|\bsee\b|sm.|g
+s|\buse\b|ispol'zovat'|g
+s|\bget\b|poluchit'|g
+s|\blike\b|kak|g
+s|\bthen\b|zatem|g
+s|\bfirst\b|pervyj|g
+s|\bany\b|ljuboj|g
+s|\bwork\b|rabota|g
+s|\bnow\b|sejchas|g
+s|\bmay\b|mozhet|g
+s|\bsuch\b|takie|g
+s|\bgive\b|dat'|g
+s|\bover\b|bolee|g
+s|\bthink\b|dumaju|g
+s|\bmost\b|naibolee|g
+s|\beven\b|dazhe|g
+s|\bfind\b|najti|g
+s|\bday\b|den'|g
+s|\balso\b|takzhe|g
+s|\bafter\b|posle|g
+s|\bway\b|sposob|g
+s|\bmany\b|mnogie|g
+s|\bmust\b|dolzhny|g
+s|\blook\b|smotret'|g
+s|\bbefore\b|pered|g
+s|\bgreat\b|bol'shoj|g
+s|\bback\b|nazad|g
+s|\bthrough\b|cherez|g
+s|\blong\b|dolgo|g
+s|\bwhere\b|gde|g
+s|\bmuch\b|mnogo|g
+s|\bshould\b|sleduet|g
+s|\bwell\b|nu|g
+s|\bpeople\b|ljudi|g
+s|\bdown\b|vniz|g
+s|\bown\b|sobstvennyj|g
+s|\bjust\b|prosto|g
+s|\bbecause\b|potomu chto|g
+s|\bgood\b|horoshee|g
+s|\beach\b|kazhdyj|g
+s|\bthose\b|te|g
+s|\bfeel\b|chuvstvuju|g
+s|\bseem\b|kazhetsja|g
+s|\bhow\b|kak|g
+s|\bhigh\b|vysokaja|g
+s|\btoo\b|slishkom|g
+s|\bplace\b|mesto|g
+s|\blittle\b|malo|g
+s|\bworld\b|mir|g
+s|\bvery\b|ochen'|g
+s|\bstill\b|esche|g
+s|\bnation\b|narod|g
+s|\bhand\b|ruka|g
+s|\bold\b|staryj|g
+s|\blife\b|zhizn'|g
+s|\btell\b|skazhite|g
+s|\bwrite\b|napishite|g
+s|\bbecome\b|stat'|g
+s|\bhere\b|zdes'|g
+s|\bshow\b|pokazat'|g
+s|\bhouse\b|dom|g
+s|\bboth\b|oba|g
+s|\bbetween\b|mezhdu|g
+s|\bneed\b|nuzhno|g
+s|\bmean\b|imeju v vidu|g
+s|\bcall\b|zvonok|g
+s|\bdevelop\b|razvivat'|g
+s|\bunder\b|pod|g
+s|\blast\b|v proshlom|g
+s|\bright\b|pravo|g
+s|\bmove\b|dvigat'sja|g
+s|\bthing\b|vesch'|g
+s|\bgeneral\b|obschie|g
+s|\bschool\b|shkola|g
+s|\bnever\b|nikogda ne|g
+s|\bsame\b|zhe|g
+s|\banother\b|drugoj|g
+s|\bbegin\b|nachat'|g
+s|\bwhile\b|a|g
+s|\bnumber\b|chislo|g
+s|\bpart\b|chast'|g
+s|\bturn\b|ochered'|g
+s|\breal\b|real'nyj|g
+s|\bleave\b|ostavit'|g
+s|\bmight\b|mozhet|g
+s|\bwant\b|hochu|g
+s|\bpoint\b|tochka|g
+s|\bform\b|forma|g
+s|\boff\b|vykl.|g
+s|\bchild\b|rebenok|g
+s|\bfew\b|neskol'ko|g
+s|\bsmall\b|malen'kij|g
+s|\bsince\b|poskol'ku|g
+s|\bagainst\b|protiv|g
+s|\bask\b|zadat'|g
+s|\blate\b|pozdno|g
+s|\bhome\b|domoj|g
+s|\binterest\b|interes|g
+s|\blarge\b|bol'shie|g
+s|\bperson\b|chelovek|g
+s|\bend\b|konets|g
+s|\bopen\b|otkryt'|g
+s|\bpublic\b|obschestvennyj|g
+s|\bfollow\b|sledujte|g
+s|\bduring\b|vo vremja|g
+s|\bpresent\b|nastojaschee|g
+s|\bwithout\b|bez|g
+s|\bagain\b|snova|g
+s|\bhold\b|derzhat'|g
+s|\bgovern\b|regulirujut|g
+s|\baround\b|vokrug|g
+s|\bpossible\b|vozmozhno|g
+s|\bhead\b|rukovoditel'|g
+s|\bconsider\b|rassmotrim|g
+s|\bword\b|slovo|g
+s|\bprogram\b|programma|g
+s|\bproblem\b|problema|g
+s|\bhowever\b|odnako|g
+s|\blead\b|privesti|g
+s|\bsystem\b|sistema|g
+s|\bset\b|nabor|g
+s|\border\b|zakaz|g
+s|\beye\b|glaz|g
+s|\bplan\b|plan|g
+s|\brun\b|zapustit'|g
+s|\bkeep\b|derzhat'|g
+s|\bface\b|litso|g
+s|\bfact\b|fakt|g
+s|\bgroup\b|gruppa|g
+s|\bplay\b|igrat'|g
+s|\bstand\b|stend|g
+s|\bincrease\b|uvelichenie|g
+s|\bearly\b|rano|g
+s|\bcourse\b|kurs|g
+s|\bchange\b|izmenit'|g
+s|\bhelp\b|spravka|g
+s|\bline\b|linija|g
+s|\bcity\b|gorod|g
+s|\bput\b|postavit'|g
+s|\bclose\b|zakryt'|g
+s|\bcase\b|delo|g
+s|\bforce\b|sila|g
+s|\bmeet\b|vstretit'|g
+s|\bonce\b|odin raz|g
+s|\bwater\b|vody|g
+s|\bupon\b|po|g
+s|\bwar\b|vojna|g
+s|\bbuild\b|postroit'|g
+s|\bhear\b|uslyshat'|g
+s|\blight\b|svet|g
+s|\bunite\b|ob'edinit'|g
+s|\blive\b|zhit'|g
+s|\bevery\b|kazhdyj|g
+s|\bcountry\b|strana|g
+s|\bbring\b|prinesti|g
+s|\bcenter\b|tsentr|g
+s|\blet\b|pust'|g
+s|\bside\b|storona|g
+s|\btry\b|poprobovat'|g
+s|\bprovide\b|obespechit'|g
+s|\bcontinue\b|prodolzhit'|g
+s|\bname\b|nazvanie|g
+s|\bcertain\b|nekotorye|g
+s|\bpower\b|moschnost'|g
+s|\bpay\b|platit'|g
+s|\bresult\b|rezul'tat|g
+s|\bquestion\b|vopros|g
+s|\bstudy\b|issledovanie|g
+s|\bwoman\b|zhenschina|g
+s|\bmember\b|chlen|g
+s|\buntil\b|poka|g
+s|\bfar\b|daleko|g
+s|\bnight\b|noch'|g
+s|\balways\b|vsegda|g
+s|\bservice\b|servis|g
+s|\baway\b|vdali|g
+s|\breport\b|doklad|g
+s|\bsomething\b|chto-to|g
+s|\bcompany\b|kompanija|g
+s|\bweek\b|nedelju|g
+s|\bchurch\b|tserkov'|g
+s|\btoward\b|k|g
+s|\bstart\b|nachat'|g
+s|\bsocial\b|sotsial'nye|g
+s|\broom\b|nomer|g
+s|\bfigure\b|ris.|g
+s|\bnature\b|priroda|g
+s|\bthough\b|hotja|g
+s|\byoung\b|molodye|g
+s|\bless\b|men'she|g
+s|\benough\b|dostatochno|g
+s|\balmost\b|pochti|g
+s|\bread\b|prochitat'|g
+s|\binclude\b|vkljuchajut|g
+s|\bpresident\b|prezident|g
+s|\bnothing\b|nichego|g
+s|\byet\b|esche|g
+s|\bbetter\b|luchshe|g
+s|\bbig\b|bol'shoj|g
+s|\bboy\b|mal'chik|g
+s|\bcost\b|stoimost'|g
+s|\bbusiness\b|biznes|g
+s|\bvalue\b|znachenie|g
+s|\bsecond\b|vtoroj|g
+s|\bwhy\b|pochemu|g
+s|\bclear\b|jasno|g
+s|\bexpect\b|ozhidat'|g
+s|\bfamily\b|sem'ja|g
+s|\bcomplete\b|polnoe|g
+s|\bact\b|akt|g
+s|\bsense\b|smysl|g
+s|\bmind\b|um|g
+s|\bexperience\b|opyt|g
+s|\bart\b|iskusstvo|g
+s|\bnext\b|dalee|g
+s|\bnear\b|rjadom|g
+s|\bdirect\b|prjamye|g
+s|\bcar\b|avtomobil'|g
+s|\blaw\b|zakon|g
+s|\bindustry\b|promyshlennosti|g
+s|\bimportant\b|vazhno|g
+s|\bgirl\b|devushka|g
+s|\bgod\b|Bog|g
+s|\bseveral\b|neskol'ko|g
+s|\bmatter\b|delo|g
+s|\busual\b|obychno|g
+s|\brather\b|a|g
+s|\bper\b|v|g
+s|\boften\b|chasto|g
+s|\bkind\b|vid|g
+s|\bamong\b|sredi|g
+s|\bwhite\b|belyj|g
+s|\breason\b|prichina|g
+s|\baction\b|dejstvie|g
+s|\breturn\b|vozvraschenie|g
+s|\bfoot\b|nogi|g
+s|\bcare\b|uhod|g
+s|\bsimple\b|prostoj|g
+s|\bwithin\b|v|g
+s|\blove\b|ljubov'|g
+s|\bhuman\b|cheloveka|g
+s|\balong\b|vmeste|g
+s|\bappear\b|pojavljajutsja|g
+s|\bdoctor\b|doktor|g
+s|\bbelieve\b|verju|g
+s|\bspeak\b|govorjat|g
+s|\bactive\b|aktivnyj|g
+s|\bstudent\b|student|g
+s|\bmonth\b|mesjats|g
+s|\bdrive\b|disk|g
+s|\bconcern\b|kontsern|g
+s|\bbest\b|luchshie|g
+s|\bdoor\b|dver'|g
+s|\bhope\b|nadejus'|g
+s|\bexample\b|primer|g
+s|\binform\b|informirovat'|g
+s|\bbody\b|telo|g
+s|\bever\b|kogda-nibud'|g
+s|\bleast\b|mere|g
+s|\bprobable\b|verojatnye|g
+s|\bunderstand\b|ponimaju|g
+s|\breach\b|dostich'|g
+s|\beffect\b|effekt|g
+s|\bdifferent\b|raznye|g
+s|\bidea\b|ideja|g
+s|\bwhole\b|ves'|g
+s|\bcontrol\b|kontrol'|g
+s|\bcondition\b|sostojanie|g
+s|\bfield\b|pole|g
+s|\bpass\b|projti|g
+s|\bfall\b|osen'|g
+s|\bnote\b|Primechanie|g
+s|\bspecial\b|spetsial'nye|g
+s|\btalk\b|pogovorim|g
+s|\bparticular\b|chastnosti|g
+s|\btoday\b|segodnja|g
+s|\bmeasure\b|meru|g
+s|\bwalk\b|progulka|g
+s|\bteach\b|uchit'|g
+s|\blow\b|nizkij|g
+s|\bhour\b|chas|g
+s|\btype\b|Tip|g
+s|\bcarry\b|snesti|g
+s|\brate\b|stavka|g
+s|\bremain\b|ostajutsja|g
+s|\bfull\b|polnyj|g
+s|\bstreet\b|ulitsa|g
+s|\beasy\b|legko|g
+s|\balthough\b|hotja|g
+s|\brecord\b|zapis'|g
+s|\bsit\b|sidet'|g
+s|\bdetermine\b|opredelit'|g
+s|\blevel\b|uroven'|g
+s|\blocal\b|mestnye|g
+s|\bsure\b|uveren|g
+s|\breceive\b|poluchat'|g
+s|\bthus\b|takim obrazom|g
+s|\bmoment\b|moment|g
+s|\bspirit\b|duh|g
+s|\btrain\b|poezda|g
+s|\bcollege\b|kolledzh|g
+s|\breligion\b|religija|g
+s|\bperhaps\b|vozmozhno|g
+s|\bmusic\b|muzyka|g
+s|\bgrow\b|rasti|g
+s|\bfree\b|besplatno|g
+s|\bcause\b|prichinoj|g
+s|\bserve\b|sluzhit'|g
+s|\bage\b|vozrast|g
+s|\bbook\b|kniga|g
+s|\bboard\b|doska|g
+s|\brecent\b|poslednie|g
+s|\bsound\b|zvuk|g
+s|\boffice\b|ofis|g
+s|\bcut\b|vyrezat'|g
+s|\bstep\b|shag|g
+s|\bclass\b|klass|g
+s|\btrue\b|pravda|g
+s|\bhistory\b|istorija|g
+s|\bposition\b|polozhenie|g
+s|\babove\b|vyshe|g
+s|\bstrong\b|sil'naja|g
+s|\bfriend\b|drug|g
+s|\bnecessary\b|neobhodimye|g
+s|\badd\b|dobavit'|g
+s|\bcourt\b|sud|g
+s|\bdeal\b|internet|g
+s|\btax\b|nalog|g
+s|\bsupport\b|podderzhka|g
+s|\bparty\b|uchastnik|g
+s|\bwhether\b|li|g
+s|\beither\b|libo|g
+s|\bland\b|zemlja|g
+s|\bmaterial\b|material|g
+s|\bhappen\b|byvaet|g
+s|\beducation\b|obrazovanie|g
+s|\bdeath\b|smert'|g
+s|\bagree\b|soglasen|g
+s|\barm\b|rukojatka|g
+s|\bmother\b|mat'|g
+s|\bacross\b|cherez|g
+s|\bquite\b|dovol'no|g
+s|\banything\b|nichego|g
+s|\btown\b|gorod|g
+s|\bpast\b|poslednie|g
+s|\bview\b|smotret'|g
+s|\bsociety\b|obschestvo|g
+s|\bmanage\b|upravlenie|g
+s|\banswer\b|otvet|g
+s|\bbreak\b|pereryv|g
+s|\borganize\b|organizovat'|g
+s|\bhalf\b|polovina|g
+s|\bfire\b|ogon'|g
+s|\blose\b|poterjat'|g
+s|\bmoney\b|den'gi|g
+s|\bstop\b|stop|g
+s|\bactual\b|fakticheskie|g
+s|\balready\b|uzhe|g
+s|\beffort\b|usilija|g
+s|\bwait\b|zhdat'|g
+s|\bdepartment\b|otdel|g
+s|\bable\b|v sostojanii|g
+s|\bpolitical\b|politicheskie|g
+s|\blearn\b|uznajte|g
+s|\bvoice\b|golos|g
+s|\bair\b|vozduh|g
+s|\btogether\b|vmeste|g
+s|\bshall\b|dolzhno|g
+s|\bcover\b|oblozhka|g
+s|\bcommon\b|obschie|g
+s|\bsubject\b|tema|g
+s|\bdraw\b|nich'ja|g
+s|\bshort\b|korotkie|g
+s|\bwife\b|zhena|g
+s|\btreat\b|lechit'|g
+s|\blimit\b|predel|g
+s|\broad\b|doroga|g
+s|\bletter\b|pis'mo|g
+s|\bcolor\b|tsvet|g
+s|\bbehind\b|pozadi|g
+s|\bproduce\b|proizvodim|g
+s|\bsend\b|otpravit'|g
+s|\bterm\b|srok|g
+s|\btotal\b|Itogo|g
+s|\buniversity\b|universitet|g
+s|\brise\b|pod'em|g
+s|\bcentury\b|veka|g
+s|\bsuccess\b|uspeh|g
+s|\bminute\b|minut|g
+s|\bremember\b|pomnju|g
+s|\bpurpose\b|tsel'|g
+s|\btest\b|test|g
+s|\bfight\b|boj|g
+s|\bwatch\b|smotret'|g
+s|\bsituation\b|situatsija|g
+s|\bsouth\b|Juzhnaja|g
+s|\bago\b|nazad|g
+s|\bdifference\b|raznitsa|g
+s|\bstage\b|etap|g
+s|\bfather\b|otets|g
+s|\btable\b|Tablitsa|g
+s|\brest\b|ostal'noe|g
+s|\bbear\b|medved'|g
+s|\bentire\b|vsego|g
+s|\bmarket\b|rynok|g
+s|\bprepare\b|podgotovit'|g
+s|\bexplain\b|ob'jasnit'|g
+s|\boffer\b|predlagaem|g
+s|\bplant\b|zavod|g
+s|\bcharge\b|besplatno|g
+s|\bground\b|grunt|g
+s|\bwest\b|Zapad|g
+s|\bpicture\b|kartinka|g
+s|\bhard\b|zhestkij|g
+s|\bfront\b|stojka|g
+s|\blie\b|lozh'|g
+s|\bmodern\b|sovremennye|g
+s|\bdark\b|temno|g
+s|\bsurface\b|poverhnost'|g
+s|\brule\b|pravilo|g
+s|\bregard\b|svjazi|g
+s|\bdance\b|tanets|g
+s|\bpeace\b|mir|g
+s|\bobserve\b|nabljudat'|g
+s|\bfuture\b|buduschee|g
+s|\bwall\b|steny|g
+s|\bfarm\b|ferma|g
+s|\bclaim\b|pretenzii|g
+s|\bfirm\b|firma|g
+s|\boperation\b|operatsija|g
+s|\bfurther\b|dalee|g
+s|\bpressure\b|davlenie|g
+s|\bproperty\b|nedvizhimost'|g
+s|\bmorning\b|utro|g
+s|\bamount\b|summa|g
+s|\btop\b|top|g
+s|\boutside\b|snaruzhi|g
+s|\bpiece\b|kusok|g
+s|\bsometimes\b|inogda|g
+s|\bbeauty\b|krasota|g
+s|\btrade\b|torgovlja|g
+s|\bfear\b|strah|g
+s|\bdemand\b|spros|g
+s|\bwonder\b|interesno|g
+s|\blist\b|spisok|g
+s|\baccept\b|prinimaem|g
+s|\bjudge\b|sud'ja|g
+s|\bpaint\b|kraska|g
+s|\bmile\b|milja|g
+s|\bsoon\b|skoro|g
+s|\bresponsible\b|otvetstvennost'|g
+s|\ballow\b|razreshit'|g
+s|\bsecretary\b|sekretar'|g
+s|\bheart\b|serdtse|g
+s|\bunion\b|Sojuz|g
+s|\bslow\b|medlenno|g
+s|\bisland\b|ostrov|g
+s|\benter\b|vvedite|g
+s|\bdrink\b|pit'|g
+s|\bstory\b|istorija|g
+s|\bexperiment\b|eksperiment|g
+s|\bstay\b|prebyvanie|g
+s|\bpaper\b|bumaga|g
+s|\bspace\b|prostranstvo|g
+s|\bapply\b|primenit'|g
+s|\bdecide\b|reshit'|g
+s|\bshare\b|podelit'sja|g
+s|\bdesire\b|zhelanie|g
+s|\bspend\b|tratit'|g
+s|\bsign\b|znak|g
+s|\btherefore\b|poetomu|g
+s|\bvarious\b|razlichnye|g
+s|\bvisit\b|vizit|g
+s|\bsupply\b|postavka|g
+s|\bofficer\b|ofitser|g
+s|\bdoubt\b|somnevajus'|g
+s|\bprivate\b|Chastnaja|g
+s|\bimmediate\b|neposredstvennye|g
+s|\bwish\b|zhelaju|g
+s|\bcontain\b|soderzhat'|g
+s|\bfeed\b|kormit'|g
+s|\braise\b|podnjat'|g
+s|\bdescribe\b|opisat'|g
+s|\bready\b|gotov|g
+s|\bhorse\b|loshad'|g
+s|\bson\b|syn|g
+s|\bexist\b|suschestvujut|g
+s|\bnorth\b|sever|g
+s|\bsuggest\b|predlagaju|g
+s|\bstation\b|stantsija|g
+s|\beffective\b|effektivnoe|g
+s|\bfood\b|eda|g
+s|\bdeep\b|glubokij|g
+s|\bwide\b|shirokij|g
+s|\balone\b|v odinochku|g
+s|\bcharacter\b|personazh|g
+s|\benglish\b|anglijskij|g
+s|\bhappy\b|schastliv|g
+s|\bcritic\b|kritik|g
+s|\bunit\b|blok|g
+s|\bproduct\b|produkt|g
+s|\brespect\b|uvazhenie|g
+s|\bdrop\b|padenie|g
+s|\bnor\b|ni|g
+s|\bfill\b|zapolnit'|g
+s|\bcold\b|holodnyj|g
+s|\brepresent\b|predstavljajut|g
+s|\bsudden\b|vnezapnaja|g
+s|\bbasic\b|osnovnye|g
+s|\bkill\b|ubit'|g
+s|\bfine\b|shtraf|g
+s|\btrouble\b|beda|g
+s|\bmark\b|Mark|g
+s|\bsingle\b|odin|g
+s|\bpress\b|press|g
+s|\bheavy\b|tjazhelye|g
+s|\battempt\b|popytka|g
+s|\borigin\b|proishozhdenie|g
+s|\bstandard\b|standart|g
+s|\beverything\b|vse|g
+s|\bcommittee\b|komitet|g
+s|\bmoral\b|moral'nyj|g
+s|\bblack\b|chernyj|g
+s|\bred\b|krasnyj|g
+s|\bbad\b|ploho|g
+s|\bearth\b|zemlja|g
+s|\baccord\b|akkord|g
+s|\belse\b|esche|g
+s|\bmere\b|prosto|g
+s|\bdie\b|umeret'|g
+s|\bremark\b|replika|g
+s|\bbasis\b|osnove|g
+s|\bexcept\b|krome|g
+s|\bequal\b|ravnye|g
+s|\beast\b|Vostok|g
+s|\bevent\b|meroprijatie|g
+s|\bemploy\b|rabotajut|g
+s|\bdefense\b|oborony|g
+s|\bsmile\b|ulybka|g
+s|\briver\b|reka|g
+s|\bimprove\b|uluchshit'|g
+s|\bgame\b|igra|g
+s|\bdetail\b|detal'|g
+s|\baccount\b|scheta|g
+s|\bcent\b|tsent|g
+s|\bsort\b|vrode|g
+s|\breduce\b|umen'shit'|g
+s|\bclub\b|klub|g
+s|\bbuy\b|kupit'|g
+s|\battention\b|vnimanie|g
+s|\bship\b|korabl'|g
+s|\bdecision\b|reshenie|g
+s|\bwear\b|nosit'|g
+s|\binside\b|vnutri|g
+s|\bwin\b|vyigrat'|g
+s|\bsuppose\b|dopustim|g
+s|\bride\b|ezdit'|g
+s|\boperate\b|rabotat'|g
+s|\brealize\b|realizovat'|g
+s|\bsale\b|prodazha|g
+s|\bchoose\b|vybrat'|g
+s|\bpark\b|park|g
+s|\bsquare\b|ploschad'|g
+s|\bvote\b|golosovanie|g
+s|\bprice\b|tsena|g
+s|\bdistrict\b|rajon|g
+s|\bdead\b|mertvye|g
+s|\bforeign\b|inostrannye|g
+s|\bwindow\b|okna|g
+s|\bbeyond\b|dal'she|g
+s|\bdirection\b|napravlenie|g
+s|\bstrike\b|zabastovka|g
+s|\binstead\b|vmesto|g
+s|\btrial\b|sudebnaja|g
+s|\bpractice\b|praktika|g
+s|\bcatch\b|pojmat'|g
+s|\bopportunity\b|vozmozhnost'|g
+s|\blikely\b|skoree vsego|g
+s|\brecognize\b|priznat'|g
+s|\bpermit\b|razreshenie|g
+s|\bserious\b|ser'eznye|g
+s|\battack\b|ataka|g
+s|\bfloor\b|etazh|g
+s|\bassociation\b|assotsiatsija|g
+s|\bspring\b|vesna|g
+s|\blot\b|mnogo|g
+s|\bstock\b|fondovaja|g
+s|\black\b|otsutstvie|g
+s|\bhair\b|volos|g
+s|\bscience\b|nauka|g
+s|\brelation\b|otnoshenija|g
+s|\bprofession\b|professija|g
+s|\bpattern\b|uzor|g
+s|\bquick\b|bystraja|g
+s|\bmedical\b|meditsinskij|g
+s|\binfluence\b|vlijanie|g
+s|\boccasion\b|sluchaj|g
+s|\bmachine\b|mashina|g
+s|\bcompare\b|sravnit'|g
+s|\bhusband\b|muzh|g
+s|\bblue\b|sinij|g
+s|\binternational\b|mezhdunarodnyj|g
+s|\bfair\b|jarmarka|g
+s|\bespecially\b|osobenno|g
+s|\bindeed\b|dejstvitel'no|g
+s|\bimagine\b|predstav'te|g
+s|\bsurprise\b|sjurpriz|g
+s|\baverage\b|srednjaja|g
+s|\bofficial\b|ofitsial'nyj|g
+s|\btemperature\b|temperatura|g
+s|\bdifficult\b|slozhno|g
+s|\bsing\b|pet'|g
+s|\bhit\b|nazhmite|g
+s|\btree\b|derevo|g
+s|\brace\b|gonki|g
+s|\bpolice\b|politsija|g
+s|\btouch\b|sensornyj|g
+s|\brelative\b|otnositel'naja|g
+s|\bthrow\b|brosit'|g
+s|\bquality\b|kachestvo|g
+s|\bformer\b|byvshij|g
+s|\bpull\b|tjanut'|g
+s|\bchance\b|shans|g
+s|\bprove\b|dokazat'|g
+s|\bargue\b|sporit'|g
+s|\bsettle\b|soglashajtes'|g
+s|\bgrowth\b|rost|g
+s|\bdate\b|Data|g
+s|\bheat\b|tepla|g
+s|\bsave\b|sohranit'|g
+s|\bperformance\b|proizvoditel'nost'|g
+s|\bcount\b|graf|g
+s|\bproduction\b|proizvodstvo|g
+s|\blisten\b|slushat'|g
+s|\bmain\b|osnovnye|g
+s|\bpick\b|zabrat'|g
+s|\bsize\b|Razmer|g
+s|\bcool\b|kruto|g
+s|\barmy\b|armija|g
+s|\bpatient\b|patsient|g
+s|\bcombine\b|sovmestit'|g
+s|\bsummer\b|leto|g
+s|\bhall\b|zal|g
+s|\bslight\b|neznachitel'nye|g
+s|\bcommand\b|komanda|g
+s|\benjoy\b|naslazhdajtes'|g
+s|\blength\b|dlina|g
+s|\bproper\b|pravil'noe|g
+s|\bexpress\b|ekspress|g
+s|\bhealth\b|zdorov'ja|g
+s|\bchief\b|glavnyj|g
+s|\bevening\b|vecher|g
+s|\bstore\b|magazin|g
+s|\blanguage\b|jazyk|g
+s|\bdegree\b|stepen'|g
+s|\blay\b|lej|g
+s|\bcurrent\b|toka|g
+s|\bgun\b|pistolet|g
+s|\bdog\b|sobaka|g
+s|\bhotel\b|otel'|g
+s|\bstrange\b|stranno|g
+s|\bseparate\b|otdel'nye|g
+s|\bboat\b|lodka|g
+s|\bfail\b|sboj|g
+s|\bclean\b|chistyj|g
+s|\bdress\b|plat'e|g
+s|\banyone\b|vsem|g
+s|\bgain\b|poluchit'|g
+s|\bpain\b|bol'|g
+s|\bobject\b|ob'ekt|g
+s|\bknowledge\b|znanija|g
+s|\bdepend\b|zavisit|g
+s|\brelate\b|otnosjatsja|g
+s|\bbelow\b|nizhe|g
+s|\bdollar\b|dollar|g
+s|\badvance\b|zaranee|g
+s|\bshape\b|forma|g
+s|\barrange\b|organizovat'|g
+s|\bpopulation\b|naselenija|g
+s|\byes\b|da|g
+s|\bsell\b|prodazha|g
+s|\bmention\b|uchtite|g
+s|\bdry\b|suhoj|g
+s|\bcheck\b|proverit'|g
+s|\bpoet\b|poet|g
+s|\bsleep\b|spat'|g
+s|\bjoin\b|prisoedinjajtes'|g
+s|\bhot\b|gorjachij|g
+s|\bbed\b|krovat'|g
+s|\belectric\b|elektricheskij|g
+s|\bdream\b|mechta|g
+s|\bdue\b|iz-za|g
+s|\bseason\b|sezon|g
+s|\bmanner\b|obrazom|g
+s|\bfit\b|podhodjat|g
+s|\bleft\b|sleva|g
+s|\bprogress\b|progress|g
+s|\bneither\b|ni|g
+s|\bstrength\b|prochnost'|g
+s|\bnotice\b|uvedomlenie|g
+s|\bfinish\b|otdelka|g
+s|\bopinion\b|mnenie|g
+s|\bbill\b|Bill|g
+s|\bwestern\b|Zapadnaja|g
+s|\btruth\b|pravda|g
+s|\bwrong\b|nepravil'no|g
+s|\btravel\b|proezd|g
+s|\bsuit\b|kostjum|g
+s|\bbank\b|bank|g
+s|\bexact\b|tochnoe|g
+s|\bhonor\b|chest'|g
+s|\bbrother\b|brat|g
+s|\bquiet\b|tihij|g
+s|\bmarry\b|zhenit'sja|g
+s|\bcorner\b|uglovoj|g
+s|\bhandle\b|ruchka|g
+s|\bdanger\b|opasnost'|g
+s|\bhospital\b|bol'nitsa|g
+s|\bpool\b|bassejn|g
+s|\bpromise\b|obeschaju|g
+s|\bblood\b|krov'|g
+s|\bshoot\b|streljat'|g
+s|\bscene\b|stsena|g
+s|\bliterature\b|literatura|g
+s|\barrive\b|pribytie|g
+s|\bfilm\b|fil'm|g
+s|\bbase\b|baza|g
+s|\bfreedom\b|svoboda|g
+s|\bbar\b|bar|g
+s|\bmaybe\b|mozhet byt',|g
+s|\bhang\b|povesit'|g
+s|\bsuffer\b|stradat'|g
+s|\bmanufacture\b|proizvodstvo|g
+s|\bfrequent\b|chastye|g
+s|\brock\b|rok|g
+s|\bloss\b|poteri|g
+s|\bburn\b|szhech'|g
+s|\bsun\b|solntse|g
+s|\baudience\b|auditorija|g
+s|\bessential\b|efirnoe|g
+s|\bglass\b|steklo|g
+s|\bprevent\b|predotvratit'|g
+s|\bpoem\b|stihotvorenie|g
+s|\bpoor\b|bednyj|g
+s|\binch\b|djujmov|g
+s|\bsong\b|pesnja|g
+s|\bskill\b|navyk|g
+s|\bpost\b|post|g
+s|\bpopular\b|populjarnye|g
+s|\bradio\b|radio|g
+s|\banimal\b|zhivotnoe|g
+s|\bconscious\b|soznatel'noe|g
+s|\bworth\b|stoit|g
+s|\beat\b|kushat'|g
+s|\belection\b|vybory|g
+s|\bfaith\b|vera|g
+s|\bwave\b|volna|g
+s|\bmurder\b|ubijstvo|g
+s|\bmodel\b|model'|g
+s|\bforget\b|zabyt'|g
+s|\bextend\b|prodlit'|g
+s|\bedge\b|kraj|g
+s|\bdistance\b|rasstojanie|g
+s|\bmemory\b|pamjati|g
+s|\brecommend\b|rekomenduju|g
+s|\bdivision\b|otdel|g
+s|\bstaff\b|personal|g
+s|\bleg\b|noga|g
+s|\bdiscussion\b|obsuzhdenie|g
+s|\baddress\b|adres|g
+s|\bfly\b|letat'|g
+s|\bdependent\b|zavisimye|g
+s|\bball\b|mjach|g
+s|\bshake\b|vstrjahnut'|g
+s|\bframe\b|ramka|g
+s|\bextreme\b|ekstrim|g
+s|\bengineer\b|inzhener|g
+s|\bthick\b|tolstye|g
+s|\bcomfort\b|komfort|g
+s|\blatter\b|poslednie|g
+s|\bcamp\b|lager'|g
+s|\boil\b|maslo|g
+s|\bdiscover\b|znakomstva|g
+s|\bexamine\b|izuchit'|g
+s|\bdifficulty\b|slozhnosti|g
+s|\btooth\b|zub|g
+s|\bmiddle\b|srednij|g
+s|\bchoice\b|vybor|g
+s|\brefer\b|sm|g
+s|\benemy\b|vrag|g
+s|\bpractical\b|prakticheskie|g
+s|\bmarriage\b|brak|g
+s|\bbridge\b|most|g
+s|\bdeclare\b|ob'javit'|g
+s|\blady\b|ledi|g
+s|\bcross\b|krest|g
+s|\bdaily\b|ezhednevno|g
+s|\bafternoon\b|dnem|g
+s|\battend\b|prisutstvovat'|g
+s|\bdirector\b|direktor|g
+s|\bbalance\b|balans|g
+s|\bwash\b|myt'|g
+s|\bcapital\b|kapital|g
+s|\bspeed\b|skorost'|g
+s|\bblock\b|blok|g
+s|\bcitizen\b|grazhdanin|g
+s|\bmouth\b|rot|g
+s|\bhill\b|Hill|g
+s|\bgreen\b|zelenyj|g
+s|\bplease\b|pozhalujsta|g
+s|\bmotor\b|motor|g
+s|\bagency\b|agentstvo|g
+s|\bencourage\b|pooschrjat'|g
+s|\bgovernor\b|gubernator|g
+s|\bworry\b|bespokoit'sja|g
+s|\baffair\b|roman|g
+s|\bshoulder\b|plecho|g
+s|\bbright\b|jarkij|g
+s|\bmass\b|massa|g
+s|\bsample\b|obrazets|g
+s|\bpretty\b|dovol'no|g
+s|\brepeat\b|povtorite|g
+s|\broll\b|roll|g
+s|\bpush\b|push|g
+s|\btrip\b|poezdku|g
+s|\bcouncil\b|sovet|g
+s|\bclothe\b|odevat'|g
+s|\bparent\b|roditel'|g
+s|\bforward\b|vpered|g
+s|\bsharp\b|ostrye|g
+s|\bstraight\b|prjam|g
+s|\bgas\b|gaz|g
+s|\bweight\b|ves|g
+s|\bdiscuss\b|obsudit'|g
+s|\bfix\b|ispravit'|g
+s|\bload\b|nagruzki|g
+s|\bmaster\b|master|g
+s|\bwhatever\b|nezavisimo ot|g
+s|\bround\b|kruglyj|g
+s|\brapid\b|bystroe|g
+s|\blaugh\b|smejat'sja|g
+s|\bfinger\b|palets|g
+s|\bspot\b|pjatna|g
+s|\bpropose\b|predlagaju|g
+s|\bshop\b|magazin|g
+s|\bbroad\b|shirokaja|g
+s|\breplace\b|zamenit'|g
+s|\breply\b|otvet|g
+s|\bextent\b|stepeni|g
+s|\block\b|zamok|g
+s|\bemployee\b|sotrudnik|g
+s|\bahead\b|vperedi|g
+s|\bsight\b|pritsel|g
+s|\bspread\b|rasprostranenie|g
+s|\bwind\b|veter|g
+s|\bapprove\b|Utverdit'|g
+s|\bdestroy\b|unichtozhit'|g
+s|\bnone\b|nikto|g
+s|\bpound\b|funt|g
+s|\bfame\b|slavy|g
+s|\bimportance\b|znachenie|g
+s|\breflect\b|otrazhat'|g
+s|\badvantage\b|preimuschestvo|g
+s|\bmatch\b|match|g
+s|\bregular\b|reguljarnye|g
+s|\bwage\b|zarabotnaja plata|g
+s|\brefuse\b|otkazat'|g
+s|\bexistence\b|suschestvovanie|g
+s|\bhardly\b|vrjad li|g
+s|\bperform\b|vypolnjat'|g
+s|\btitle\b|nazvanie|g
+s|\btend\b|kak pravilo|g
+s|\bexercise\b|uprazhnenie|g
+s|\bthin\b|tonkij|g
+s|\bcoat\b|pal'to|g
+s|\bbit\b|bit|g
+s|\bmountain\b|gora|g
+s|\byouth\b|molodezhi|g
+s|\bbehavior\b|povedenie|g
+s|\bnewspaper\b|gazeta|g
+s|\bsecret\b|sekret|g
+s|\bability\b|sposobnost'|g
+s|\bsea\b|more|g
+s|\bsoft\b|mjagkij|g
+s|\bjustice\b|spravedlivosti|g
+s|\breasonable\b|razumnye|g
+s|\bcircle\b|krug|g
+s|\bsolid\b|tverdye|g
+s|\bpage\b|stranitsa|g
+s|\bweapon\b|oruzhie|g
+s|\bfast\b|bystro|g
+s|\brepresentative\b|predstavitel'|g
+s|\bsearch\b|poisk|g
+s|\bpure\b|chisto|g
+s|\bescape\b|pobeg|g
+s|\bcrowd\b|tolpa|g
+s|\bstick\b|ruchka|g
+s|\btelephone\b|telefon|g
+s|\bavoid\b|izbezhat'|g
+s|\bgarden\b|sad|g
+s|\bfavor\b|pol'zu|g
+s|\bnews\b|novosti|g
+s|\bunless\b|esli|g
+s|\bdinner\b|uzhin|g
+s|\bsomeone\b|kto-to|g
+s|\bsignal\b|signal|g
+s|\byard\b|dvor|g
+s|\bideal\b|ideal|g
+s|\bwarm\b|teplyj|g
+s|\bmiss\b|miss|g
+s|\bshelter\b|prijut|g
+s|\bsoldier\b|soldat|g
+s|\barticle\b|stat'ja|g
+s|\bcry\b|plakat'|g
+s|\bcaptain\b|kapitan|g
+s|\bfamiliar\b|znakomye|g
+s|\bseat\b|siden'e|g
+s|\bguest\b|Gost'|g
+s|\bweak\b|slabyj|g
+s|\bexcite\b|vozbuzhdajut|g
+s|\bking\b|korol'|g
+s|\beveryone\b|vse|g
+s|\bwine\b|vina|g
+s|\bhole\b|otverstie|g
+s|\bduty\b|dolg|g
+s|\bbeat\b|bit'|g
+s|\bperfect\b|ideal'noe|g
+s|\bbottom\b|dno|g
+s|\bcompose\b|sochinjat'|g
+s|\bbattle\b|bitva|g
+s|\bexpense\b|schet|g
+s|\bcattle\b|skot|g
+s|\bflow\b|potok|g
+s|\bkitchen\b|kuhnja|g
+s|\bdust\b|pyl'|g
+s|\bbottle\b|butylka|g
+s|\badmit\b|priznat'|g
+s|\btear\b|sleza|g
+s|\btire\b|avtoshiny|g
+s|\bexpression\b|vyrazhenie|g
+s|\bexception\b|iskljuchenie|g
+s|\bapplication\b|prilozhenie|g
+s|\bbelong\b|prinadlezhat|g
+s|\brich\b|bogatyj|g
+s|\bfailure\b|proval|g
+s|\bstruggle\b|bor'ba|g
+s|\binstrument\b|instrument|g
+s|\bvariety\b|raznoobrazie|g
+s|\bnarrow\b|uzkie|g
+s|\btheater\b|teatr|g
+s|\bcollection\b|kollektsija|g
+s|\brain\b|dozhd'|g
+s|\breview\b|kommentarij|g
+s|\bpreserve\b|sohranit'|g
+s|\bleadership\b|rukovodstvo|g
+s|\bclay\b|glina|g
+s|\bdaughter\b|doch'|g
+s|\bfellow\b|molodets|g
+s|\bswing\b|kacheli|g
+s|\bthank\b|spasibo|g
+s|\blibrary\b|biblioteka|g
+s|\bfat\b|salo|g
+s|\breserve\b|rezerv|g
+s|\btour\b|tur|g
+s|\bnice\b|prijatno|g
+s|\bwarn\b|predupredit'|g
+s|\bring\b|kol'tso|g
+s|\bbitter\b|gor'kij|g
+s|\bchair\b|stul|g
+s|\byesterday\b|vchera|g
+s|\bscientific\b|nauchnye|g
+s|\bflower\b|tsvetok|g
+s|\bwheel\b|kolesa|g
+s|\bsolution\b|reshenie|g
+s|\baim\b|tsel'|g
+s|\bgather\b|sobrat'|g
+s|\binvite\b|priglashaem|g
+s|\bmoreover\b|bolee togo|g
+s|\bfresh\b|svezhie|g
+s|\bforest\b|les|g
+s|\bwinter\b|zima|g
+s|\bbox\b|korobka|g
+s|\bbelief\b|vera|g
+s|\bordinary\b|obychnye|g
+s|\bimpossible\b|nevozmozhno|g
+s|\bprint\b|pechat'|g
+s|\bgray\b|seryj|g
+s|\btaste\b|vkus|g
+s|\blip\b|guby|g
+s|\bspeech\b|rech'|g
+s|\breference\b|ssylka|g
+s|\bstain\b|pjatno|g
+s|\bconnection\b|soedinenie|g
+s|\botherwise\b|inache|g
+s|\bstretch\b|strejch|g
+s|\bknife\b|nozh|g
+s|\bvillage\b|derevnja|g
+s|\bblow\b|udar|g
+s|\bmistake\b|oshibka|g
+s|\bsweet\b|sladkij|g
+s|\bshout\b|krichat'|g
+s|\bdivide\b|razdelite|g
+s|\bguard\b|ohrannik|g
+s|\bworse\b|huzhe|g
+s|\bexchange\b|obmen|g
+s|\brare\b|redkie|g
+s|\bcommercial\b|kommercheskij|g
+s|\brequest\b|zapros|g
+s|\bappoint\b|naznachit'|g
+s|\bagent\b|agent|g
+s|\bdependence\b|zavisimost'|g
+s|\bbird\b|ptitsa|g
+s|\bwild\b|dikij|g
+s|\bmotion\b|dvizhenija|g
+s|\bguess\b|dumaju|g
+s|\bneighbor\b|sosed|g
+s|\bseed\b|semja|g
+s|\bfashion\b|moda|g
+s|\bloan\b|kredit|g
+s|\bcorrect\b|pravil'noe|g
+s|\bplain\b|ravnina|g
+s|\bmail\b|pochta|g
+s|\bretire\b|na pensiju|g
+s|\bopposite\b|naprotiv|g
+s|\bprefer\b|predpochitaju|g
+s|\bsafe\b|bezopasnyj|g
+s|\bevil\b|zlo|g
+s|\bdouble\b|dvojnoj|g
+s|\bwood\b|derevo|g
+s|\bempty\b|pustye|g
+s|\bbaby\b|rebenok|g
+s|\badvise\b|sovetuju|g
+s|\bcontent\b|soderzhanie|g
+s|\bsport\b|sport|g
+s|\blift\b|lift|g
+s|\bliterary\b|literaturnye|g
+s|\bcurious\b|ljubopytno|g
+s|\btie\b|galstuk|g
+s|\bflat\b|kvartira|g
+s|\bmessage\b|soobschenie|g
+s|\bneck\b|shei|g
+s|\bhate\b|nenavizhu|g
+s|\bdirt\b|grjaz'|g
+s|\bdelight\b|vostorg|g
+s|\btrust\b|doverie|g
+s|\bnobody\b|nikto ne|g
+s|\bvalley\b|dolina|g
+s|\btool\b|instrument|g
+s|\bpresence\b|nalichie|g
+s|\bcook\b|povar|g
+s|\brailroad\b|zheleznaja doroga|g
+s|\bminister\b|ministr|g
+s|\bcoffee\b|kofe|g
+s|\bbrush\b|schetka|g
+s|\bbeside\b|rjadom|g
+s|\bcollect\b|sobirat'|g
+s|\bguide\b|spravochnik|g
+s|\bluck\b|udachi|g
+s|\bprofit\b|pribyl'|g
+s|\blord\b|gospoda|g
+s|\beverybody\b|vse|g
+s|\bprison\b|tjur'ma|g
+s|\bcloud\b|oblako|g
+s|\bslave\b|rab|g
+s|\bchairman\b|predsedatel'|g
+s|\bsoil\b|pochvy|g
+s|\bdistinguish\b|otlichit'|g
+s|\bintroduce\b|vvesti|g
+s|\burge\b|prizyvaju|g
+s|\bblind\b|slepoj|g
+s|\barise\b|voznikajut|g
+s|\bupper\b|verhnie|g
+s|\bcurve\b|krivaja|g
+s|\bmembership\b|chlenstvo|g
+s|\bkey\b|kljuch|g
+s|\bentertain\b|otdyhat'|g
+s|\bsoul\b|dusha|g
+s|\bneighborhood\b|rajon|g
+s|\bfriendly\b|druzheljubnyj|g
+s|\bpair\b|para|g
+s|\bstone\b|kamen'|g
+s|\blean\b|hudoj|g
+s|\bprotect\b|zaschitit'|g
+s|\badvertise\b|reklamirovat'|g
+s|\bmystery\b|tajna|g
+s|\bwelcome\b|Dobro pozhalovat'|g
+s|\bknee\b|koleno|g
+s|\bjump\b|prygat'|g
+s|\bsnake\b|zmeja|g
+s|\bstream\b|potok|g
+s|\bavenue\b|prospekt|g
+s|\bbrown\b|korichnevyj|g
+s|\bdisease\b|bolezn'|g
+s|\bhat\b|shljapa|g
+s|\bexcellent\b|otlichnoe|g
+s|\bformal\b|ofitsial'noe|g
+s|\bsnow\b|sneg|g
+s|\bsheet\b|list|g
+s|\bsomehow\b|kak-to|g
+s|\bunity\b|edinstvo|g
+s|\bsky\b|nebo|g
+s|\brough\b|grubyj|g
+s|\bsmooth\b|gladkaja|g
+s|\bweather\b|pogoda|g
+s|\bsteady\b|ustojchivyj|g
+s|\bthreaten\b|ugrozhat'|g
+s|\bdepth\b|glubina|g
+s|\boppose\b|protiv|g
+s|\bdeliver\b|dostavit'|g
+s|\bancient\b|drevnie|g
+s|\bpray\b|molites'|g
+s|\badopt\b|prinjat'|g
+s|\bbirth\b|rozhdenie|g
+s|\bappearance\b|vneshnij vid|g
+s|\buniverse\b|Vselennaja|g
+s|\bbusy\b|zanjat|g
+s|\bhurry\b|speshite|g
+s|\bcoast\b|poberezh'e|g
+s|\bforth\b|dalee|g
+s|\bsmell\b|zapah|g
+s|\bfurnish\b|otdelka|g
+s|\bfemale\b|zhenskij|g
+s|\bhide\b|skryt'|g
+s|\bwire\b|provod|g
+s|\bproposal\b|predlozhenie|g
+s|\bought\b|nado|g
+s|\bvictory\b|pobedy|g
+s|\bquarter\b|kvartal|g
+s|\bengine\b|dvigatel'|g
+s|\bcustomer\b|sluzhby|g
+s|\bwaste\b|othodov|g
+s|\bfool\b|durak|g
+s|\bintend\b|sobirajus'|g
+s|\bintention\b|namerenie|g
+s|\bdesk\b|registratsii|g
+s|\bpolitics\b|politika|g
+s|\bpassage\b|prohozhdenie|g
+s|\blawyer\b|advokat|g
+s|\broot\b|koren'|g
+s|\bclimb\b|lazit'|g
+s|\bmetal\b|metall|g
+s|\bgradual\b|postepennoe|g
+s|\bhunt\b|ohota|g
+s|\bprotection\b|zaschita|g
+s|\bsatisfy\b|udovletvorit'|g
+s|\broof\b|krysha|g
+s|\bbranch\b|filial|g
+s|\bpleasure\b|udovol'stvie|g
+s|\bwitness\b|svidetel'|g
+s|\bloose\b|svobodnyj|g
+s|\bnose\b|nos|g
+s|\bmine\b|shahty|g
+s|\bband\b|gruppa|g
+s|\baside\b|v storonu|g
+s|\brisk\b|risk|g
+s|\btomorrow\b|zavtra|g
+s|\bremind\b|napomnite|g
+s|\bear\b|uha|g
+s|\bfish\b|ryby|g
+s|\bshore\b|bereg|g
+s|\boperator\b|operator|g
+s|\bcivilize\b|tsivilizovat'|g
+s|\bbeing\b|buduchi|g
+s|\bsilent\b|molchit|g
+s|\bscreen\b|ekran|g
+s|\bbind\b|privjazat'|g
+s|\bearn\b|zarabotat'|g
+s|\bpack\b|paket|g
+s|\bcolony\b|kolonii|g
+s|\bbesides\b|krome|g
+s|\bslip\b|slip|g
+s|\bcousin\b|kuzina|g
+s|\bscale\b|masshtab|g
+s|\brelief\b|rel'ef|g
+s|\bexplore\b|znakomstva|g
+s|\bstem\b|stvolovye|g
+s|\bbrain\b|mozg|g
+s|\bmusician\b|muzykant|g
+s|\bdefend\b|zaschischat'|g
+s|\bbend\b|sognut'|g
+s|\bsomebody\b|kto-to|g
+s|\bshadow\b|ten'|g
+s|\bmix\b|miks|g
+s|\bsmoke\b|dym|g
+s|\bdescription\b|opisanie|g
+s|\bfruit\b|frukty|g
+s|\bguilt\b|viny|g
+s|\byield\b|dohodnost'|g
+s|\bsensitive\b|chuvstvitel'nyj|g
+s|\bsalt\b|sol'|g
+s|\bpale\b|bledno|g
+s|\bsweep\b|razvertki|g
+s|\bcompletion\b|zavershenie|g
+s|\bthroat\b|gorlo|g
+s|\bagriculture\b|sel'skoe hozjajstvo|g
+s|\badmire\b|voshischajus'|g
+s|\bgentle\b|nezhnyj|g
+s|\bdozen\b|desjatka|g
+s|\bparticle\b|chastitsa|g
+s|\bpleasant\b|prijatnyj|g
+s|\bbay\b|bej|g
+s|\bcup\b|Kubok|g
+s|\bcompetition\b|konkurs|g
+s|\bmoon\b|luna|g
+s|\bterrible\b|strashnaja|g
+s|\bstrip\b|prokladki|g
+s|\bmechanic\b|mehanik|g
+s|\bshock\b|shok|g
+s|\bconversation\b|razgovor|g
+s|\bangle\b|ugol|g
+s|\btall\b|vysokij|g
+s|\bplenty\b|mnogo|g
+s|\bstar\b|zvezda|g
+s|\byellow\b|zheltyj|g
+s|\bsick\b|bol'noj|g
+s|\bthorough\b|tschatel'noe|g
+s|\babsolute\b|absoljutnaja|g
+s|\bsucceed\b|poluchitsja|g
+s|\bsurround\b|ob'emnyj|g
+s|\bproud\b|gordyj|g
+s|\bdear\b|dorogie|g
+s|\bcard\b|karta|g
+s|\blake\b|ozero|g
+s|\bbreath\b|dyhanie|g
+s|\bafraid\b|bojus'|g
+s|\bsilence\b|tishina|g
+s|\bonto\b|na|g
+s|\bshoe\b|obuvi|g
+s|\bsomewhere\b|gde-to|g
+s|\bchain\b|tsep'|g
+s|\bslide\b|slajd|g
+s|\bcopy\b|kopija|g
+s|\bmachinery\b|mashinnoe oborudovanie|g
+s|\bwake\b|razbudit'|g
+s|\bsevere\b|surovye|g
+s|\bpocket\b|karmannyj|g
+s|\bbone\b|kost'|g
+s|\bhonest\b|chestno|g
+s|\bfreeze\b|zamorozit'|g
+s|\bdictionary\b|slovar'|g
+s|\bcalm\b|spokojstvie|g
+s|\bswim\b|plavat'|g
+s|\bice\b|led|g
+s|\bmale\b|muzhchina|g
+s|\bskin\b|kozha|g
+s|\bcrack\b|treschina|g
+s|\brush\b|Rash|g
+s|\bwet\b|mokrye|g
+s|\bmeat\b|mjaso|g
+s|\bcommerce\b|kommertsija|g
+s|\bjoint\b|sovmestnoe|g
+s|\bgift\b|podarok|g
+s|\bhost\b|host|g
+s|\bsuspect\b|podozrevaemyj|g
+s|\bpath\b|put'|g
+s|\buncle\b|djadja|g
+s|\bafford\b|pozvolit' sebe|g
+s|\binstant\b|mgnovennyj|g
+s|\bsatisfactory\b|udovletvoritel'noe|g
+s|\bheight\b|vysota|g
+s|\btrack\b|trek|g
+s|\bconfidence\b|uverennost'|g
+s|\bgrass\b|trava|g
+s|\bsuggestion\b|predlozhenie|g
+s|\bfavorite\b|ljubimye|g
+s|\bbreakfast\b|zavtrak|g
+s|\bapart\b|krome|g
+s|\bchest\b|grudi|g
+s|\bentrance\b|vhod|g
+s|\bmarch\b|marta|g
+s|\bsink\b|rakovina|g
+s|\bnorthern\b|Severnyj|g
+s|\biron\b|zhelezo|g
+s|\balive\b|zhiv|g
+s|\bill\b|ploho|g
+s|\bbag\b|sumka|g
+s|\bdisturb\b|bespokoit'|g
+s|\bnative\b|rodnoj|g
+s|\bbedroom\b|spal'nja|g
+s|\bviolent\b|nasil'stvennye|g
+s|\bbeneath\b|pod|g
+s|\bpause\b|pauza|g
+s|\btough\b|zhestkaja|g
+s|\bsubstance\b|veschestvo|g
+s|\bthreat\b|opasnyj|g
+s|\bcharm\b|ocharovanie|g
+s|\babsence\b|otsutstvie|g
+s|\bfactory\b|fabrika|g
+s|\bspite\b|nesmotrja|g
+s|\bmeal\b|edu|g
+s|\buniversal\b|universal'nyj|g
+s|\baccident\b|avarija|g
+s|\bhighway\b|shosse|g
+s|\bsentence\b|prigovor|g
+s|\bliberty\b|svobody|g
+s|\bwise\b|mudryj|g
+s|\bnoise\b|shum|g
+s|\bdiscovery\b|otkrytie|g
+s|\btube\b|probka|g
+s|\bflash\b|flesh|g
+s|\btwist\b|tvist|g
+s|\bfence\b|zabor|g
+s|\bchildhood\b|detstvo|g
+s|\bjoy\b|radost'|g
+s|\bsister\b|sestra|g
+s|\bsad\b|grustno|g
+s|\befficiency\b|effektivnost'|g
+s|\bdisappear\b|ischezajut|g
+s|\bdefeat\b|porazhenie|g
+s|\bextensive\b|obshirnye|g
+s|\brent\b|arenda|g
+s|\bcomparison\b|sravnenie|g
+s|\bpossess\b|obladajut|g
+s|\bgrace\b|Grejs|g
+s|\bflesh\b|plot'|g
+s|\bliquid\b|zhidkost'|g
+s|\bscientist\b|uchenyj|g
+s|\bease\b|legkost'|g
+s|\bheaven\b|nebesa|g
+s|\bmilk\b|moloko|g
+s|\bsympathy\b|sochuvstvie|g
+s|\brank\b|rang|g
+s|\brestaurant\b|restoran|g
+s|\bfrequency\b|chastota|g
+s|\bangry\b|zloj|g
+s|\bshade\b|teni|g
+s|\baccuse\b|obvinjat'|g
+s|\bnecessity\b|neobhodimost'|g
+s|\bknock\b|stuk|g
+s|\bloud\b|gromkij|g
+s|\bpermanent\b|postojannyj|g
+s|\brow\b|stroki|g
+s|\blovely\b|prekrasnyj|g
+s|\bconfuse\b|putajut|g
+s|\bgold\b|zoloto|g
+s|\bfrighten\b|pugat'|g
+s|\bsolve\b|reshit'|g
+s|\bgrave\b|mogila|g
+s|\bsalary\b|zarplata|g
+s|\bphotograph\b|fotografija|g
+s|\badvice\b|sovety|g
+s|\babroad\b|za rubezhom|g
+s|\bwound\b|rana|g
+s|\bvirtue\b|dobrodetel'|g
+s|\bdare\b|smeju|g
+s|\bqueen\b|koroleva|g
+s|\bextra\b|dopolnitel'nye|g
+s|\battract\b|privlech'|g
+s|\bnumerous\b|mnogochislennye|g
+s|\bpink\b|rozovyj|g
+s|\bgate\b|vorota|g
+s|\bexpensive\b|dorogo|g
+s|\bshut\b|zakroj|g
+s|\bchicken\b|kuritsa|g
+s|\bforgive\b|prostit'|g
+s|\bholy\b|svjatoj|g
+s|\bwooden\b|derevjannye|g
+s|\bprompt\b|podskazhut|g
+s|\bcrime\b|prestuplenie|g
+s|\bsorry\b|k sozhaleniju|g
+s|\brepublic\b|Respublika|g
+s|\banger\b|gnev|g
+s|\bvisitor\b|posetitel'|g
+s|\bpile\b|kuchi|g
+s|\bviolence\b|nasilie|g
+s|\bsteel\b|stal'|g
+s|\bwing\b|krylo|g
+s|\bstair\b|lestnitsy|g
+s|\bpartner\b|partner|g
+s|\bdelay\b|zaderzhka|g
+s|\bgentleman\b|dzhentl'men|g
+s|\bpour\b|zalit'|g
+s|\bconfusion\b|putanitsa|g
+s|\bdamage\b|uscherb|g
+s|\bkick\b|udar|g
+s|\bsafety\b|bezopasnost'|g
+s|\bburst\b|vzryv|g
+s|\bnetwork\b|set'|g
+s|\bresistance\b|soprotivlenie|g
+s|\bscrew\b|vint|g
+s|\bpride\b|gordost'|g
+s|\btill\b|do|g
+s|\bhire\b|avtomobilej|g
+s|\bverb\b|glagol|g
+s|\bpreach\b|propovedovat'|g
+s|\bclerk\b|klerk|g
+s|\beverywhere\b|vezde|g
+s|\banyway\b|v ljubom sluchae|g
+s|\bfan\b|ventiljator|g
+s|\bconnect\b|podkljuchit'|g
+s|\begg\b|jajtso|g
+s|\befficient\b|effektivnoe|g
+s|\bgrain\b|zerna|g
+s|\bcalculate\b|rasschitat'|g
+s|\bdrag\b|peretaschite|g
+s|\bopposition\b|oppozitsija|g
+s|\bworship\b|poklonenie|g
+s|\barrest\b|arest|g
+s|\bdiscipline\b|distsiplina|g
+s|\bstring\b|stroka|g
+s|\bharbor\b|gavan'|g
+s|\bcamera\b|kamera|g
+s|\bmechanism\b|mehanizm|g
+s|\bcow\b|korova|g
+s|\bgrand\b|Grand|g
+s|\bfunny\b|smeshno|g
+s|\binsurance\b|strahovanie|g
+s|\breduction\b|snizhenie|g
+s|\bstrict\b|strogij|g
+s|\blesson\b|urok|g
+s|\btight\b|tugo|g
+s|\bsand\b|pesok|g
+s|\bplate\b|plity|g
+s|\bqualify\b|kvalifitsirovat'|g
+s|\belsewhere\b|v drugom meste|g
+s|\bmad\b|s uma|g
+s|\binterference\b|pomehi|g
+s|\bpupil\b|uchenik|g
+s|\bfold\b|fold|g
+s|\broyal\b|korolevskij|g
+s|\bvaluable\b|tsennye|g
+s|\bwhisper\b|shepot|g
+s|\banybody\b|kto-nibud'|g
+s|\bhurt\b|bol'no|g
+s|\bexcess\b|izbytok|g
+s|\bquantity\b|kolichestvo|g
+s|\bfun\b|udovol'stvie|g
+s|\bmud\b|grjazi|g
+s|\bextension\b|rasshirenie|g
+s|\brecognition\b|priznanie|g
+s|\bkiss\b|potseluj|g
+s|\bcrop\b|urozhaj|g
+s|\bsail\b|parus|g
+s|\battractive\b|privlekatel'nye|g
+s|\bhabit\b|privychka|g
+s|\brelieve\b|snjat'|g
+s|\bwisdom\b|mudrost'|g
+s|\bpersuade\b|ugovorit'|g
+s|\bcertainty\b|opredelennost'|g
+s|\bcloth\b|tkan'|g
+s|\beager\b|zhazhduschih|g
+s|\bdeserve\b|zasluzhivajut|g
+s|\bsympathetic\b|simpaticheskaja|g
+s|\bcure\b|vylechit'|g
+s|\btrap\b|lovushka|g
+s|\bpuzzle\b|golovolomki|g
+s|\bpowder\b|poroshok|g
+s|\braw\b|syr'e|g
+s|\bmankind\b|chelovechestvo|g
+s|\bglad\b|rad|g
+s|\bblame\b|vinovat|g
+s|\bwhenever\b|vsjakij raz, kogda|g
+s|\banxiety\b|trevozhnost'|g
+s|\bbus\b|avtobus|g
+s|\btremble\b|trepeschite|g
+s|\bsacred\b|svjaschennyj|g
+s|\bfortunate\b|povezlo|g
+s|\bglory\b|slava|g
+s|\bgolden\b|zolotoj|g
+s|\bneat\b|akkuratnye|g
+s|\bweekend\b|vyhodnye|g
+s|\btreasury\b|kaznachejstva|g
+s|\bovercome\b|preodolet'|g
+s|\bcat\b|koshka|g
+s|\bsacrifice\b|zhertva|g
+s|\bcomplain\b|Pozhalovat'sja|g
+s|\belect\b|izbrat'|g
+s|\broar\b|rev|g
+s|\bsake\b|sake|g
+s|\btemple\b|hram|g
+s|\bself\b|samostojatel'naja|g
+s|\bcompete\b|konkurirovat'|g
+s|\bnurse\b|medsestra|g
+s|\bstuff\b|veschi|g
+s|\bstomach\b|zheludok|g
+s|\bpeculiar\b|svojstvennyj|g
+s|\brepair\b|remont|g
+s|\bstorm\b|shtorm|g
+s|\bton\b|tonna|g
+s|\bdesert\b|pustynja|g
+s|\ballowance\b|posobie|g
+s|\bservant\b|sluga|g
+s|\bhunger\b|golod|g
+s|\bconscience\b|sovest'|g
+s|\bbread\b|hleb|g
+s|\bcrash\b|avarii|g
+s|\btip\b|sovet|g
+s|\bstrengthen\b|ukrepit'|g
+s|\bproof\b|dokazatel'stvo|g
+s|\bgenerous\b|schedryj|g
+s|\bsir\b|ser|g
+s|\btonight\b|segodnja vecherom|g
+s|\bwhip\b|knut|g
+s|\btongue\b|jazyk|g
+s|\bmill\b|mel'nitsa|g
+s|\bmerchant\b|kupets|g
+s|\bcoal\b|ugol'|g
+s|\bruin\b|isportit'|g
+s|\bintroduction\b|vvedenie|g
+s|\bcourage\b|muzhestvo|g
+s|\bactor\b|akter|g
+s|\bbelt\b|pojas|g
+s|\bstir\b|peremeshat'|g
+s|\bpackage\b|paket|g
+s|\bpunish\b|nakazat'|g
+s|\breflection\b|otrazhenie|g
+s|\bbreathe\b|dyshat'|g
+s|\banywhere\b|vezde|g
+s|\bamuse\b|poveselit'|g
+s|\bdull\b|skuchno|g
+s|\bfate\b|sud'ba|g
+s|\bnet\b|chistaja|g
+s|\bfellowship\b|obschenie|g
+s|\bfault\b|vina|g
+s|\bfurniture\b|mebel'|g
+s|\bbeam\b|luch|g
+s|\bpencil\b|karandash|g
+s|\bborder\b|granitsy|g
+s|\bdisappoint\b|razocharoval|g
+s|\bflame\b|plamja|g
+s|\bjoke\b|shutka|g
+s|\bbless\b|blagoslovi|g
+s|\bcorn\b|kukuruza|g
+s|\bshell\b|rakovina|g
+s|\btempt\b|iskushat'|g
+s|\bsupper\b|uzhin|g
+s|\bdestruction\b|razrushenie|g
+s|\bdive\b|pogruzhenie|g
+s|\banxious\b|trevozhno|g
+s|\bshine\b|blesk|g
+s|\bcheap\b|deshevye|g
+s|\bdish\b|bljudo|g
+s|\bdistant\b|dalekie|g
+s|\bgreet\b|privetstvuju|g
+s|\bflood\b|navodnenie|g
+s|\bexcuse\b|izvinite|g
+s|\binsect\b|nasekomoe|g
+s|\bocean\b|okean|g
+s|\bceremony\b|tseremonija|g
+s|\bdecrease\b|snizhenie|g
+s|\bprize\b|priz|g
+s|\bharm\b|vreda|g
+s|\binsure\b|zastrahovat'|g
+s|\bverse\b|stih|g
+s|\bpot\b|gorshok|g
+s|\bsincere\b|iskrennie|g
+s|\bcotton\b|hlopok|g
+s|\bleaf\b|list|g
+s|\brub\b|rub.|g
+s|\bmedicine\b|meditsina|g
+s|\bstroke\b|insul't|g
+s|\bbite\b|kusajutsja|g
+s|\blung\b|legkih|g
+s|\blonely\b|odinoko|g
+s|\badmission\b|priem|g
+s|\bstupid\b|glupo|g
+s|\bscratch\b|nulja|g
+s|\bcomposition\b|sostav|g
+s|\bbroadcast\b|transljatsija|g
+s|\bdrum\b|baraban|g
+s|\bresist\b|soprotivljat'sja|g
+s|\bneglect\b|prenebrezhenie|g
+s|\babsent\b|otsutstvuet|g
+s|\bpassenger\b|passazhirskij|g
+s|\badventure\b|prikljuchenija|g
+s|\bbeg\b|proshu|g
+s|\bpipe\b|truba|g
+s|\bbeard\b|boroda|g
+s|\bbold\b|smelye|g
+s|\bmeanwhile\b|mezhdu tem|g
+s|\bdevil\b|d'javol|g
+s|\bcheer\b|ura|g
+s|\bnut\b|gajka|g
+s|\bsplit\b|split|g
+s|\bmelt\b|rastopit'|g
+s|\bswear\b|kljanus'|g
+s|\bsugar\b|sahar|g
+s|\bbury\b|pohoronit'|g
+s|\bwipe\b|protrite|g
+s|\bfaint\b|obmorok|g
+s|\bcreature\b|suschestvo|g
+s|\btail\b|hvost|g
+s|\bwealth\b|bogatstvo|g
+s|\bearnest\b|vser'ez|g
+s|\btranslate\b|perevesti|g
+s|\bsuspicion\b|podozrenie|g
+s|\bnoble\b|blagorodnyj|g
+s|\binquiry\b|zapros|g
+s|\bjourney\b|puteshestvie|g
+s|\bhesitate\b|stesnjajtes'|g
+s|\bextraordinary\b|vneocherednoe|g
+s|\bborrow\b|odolzhit'|g
+s|\bowe\b|objazany|g
+s|\bfuneral\b|pohorony|g
+s|\bambition\b|ambitsii|g
+s|\bmixture\b|smes'|g
+s|\bslope\b|sklon|g
+s|\bcriminal\b|ugolovnoe|g
+s|\bseldom\b|redko|g
+s|\bmap\b|karta|g
+s|\bspin\b|spina|g
+s|\bpraise\b|hvala|g
+s|\bspare\b|zapasnye|g
+s|\bplow\b|plug|g
+s|\btelegraph\b|telegraf|g
+s|\bbarrel\b|barrel'|g
+s|\bstraighten\b|vyprjamit'|g
+s|\bscarce\b|skudnye|g
+s|\blunch\b|obed|g
+s|\bslavery\b|rabstvo|g
+s|\bcreep\b|polzuchest'|g
+s|\bsweat\b|pot|g
+s|\bgay\b|gej|g
+s|\bstiff\b|zhestkaja|g
+s|\bbrave\b|hrabryj|g
+s|\bseize\b|zahvatit'|g
+s|\bconvenient\b|udobno|g
+s|\bhorizon\b|gorizont|g
+s|\bmoderate\b|umerennyj|g
+s|\bcomplicate\b|uslozhnjat'|g
+s|\bdig\b|kopat'|g
+s|\bcurse\b|prokljatie|g
+s|\bweigh\b|vesjat|g
+s|\bpriest\b|svjaschennik|g
+s|\bexcessive\b|chrezmernoe|g
+s|\bquarrel\b|ssora|g
+s|\bwidow\b|vdova|g
+s|\bmodest\b|skromnyj|g
+s|\bdine\b|poobedat'|g
+s|\bpolitician\b|politik|g
+s|\bcustom\b|tamozhnja|g
+s|\beducate\b|vospityvat'|g
+s|\bsalesman\b|prodavets|g
+s|\bnail\b|gvozd'|g
+s|\btap\b|nazhmite|g
+s|\beastern\b|Vostochnaja|g
+s|\bpossession\b|vladenie|g
+s|\bsatisfaction\b|udovletvorenie|g
+s|\bbehave\b|vedut sebja|g
+s|\bmercy\b|miloserdie|g
+s|\bscatter\b|razbros|g
+s|\bobjection\b|vozrazhenie|g
+s|\bsilver\b|serebro|g
+s|\btent\b|palatka|g
+s|\bsaddle\b|sedlo|g
+s|\bwrap\b|obertyvanie|g
+s|\bnest\b|gnezdo|g
+s|\bgrind\b|izmel'chit'|g
+s|\bspell\b|zaklinanie|g
+s|\bplaster\b|shtukaturka|g
+s|\barch\b|arka|g
+s|\bswell\b|nabuhajut|g
+s|\bfriendship\b|druzhba|g
+s|\bbath\b|banja|g
+s|\bbundle\b|pachka|g
+s|\bgrateful\b|blagodaren|g
+s|\bcrown\b|korona|g
+s|\bboundary\b|granitsa|g
+s|\bnowhere\b|nigde|g
+s|\basleep\b|spit|g
+s|\bclock\b|chasy|g
+s|\bboil\b|otvarit'|g
+s|\baltogether\b|voobsche|g
+s|\blend\b|lend|g
+s|\bholiday\b|prazdnik|g
+s|\bprecious\b|dragotsennye|g
+s|\bwander\b|brodit'|g
+s|\bugly\b|nekrasivo|g
+s|\breputation\b|Reputatsija|g
+s|\bticket\b|bilet|g
+s|\bpretend\b|pritvorjat'sja|g
+s|\bdismiss\b|uvolit'|g
+s|\bdelicate\b|nezhnyj|g
+s|\bdespair\b|otchajanie|g
+s|\bawake\b|prosnulsja|g
+s|\btea\b|chaj|g
+s|\bFALSE\b|Lozhnye|g
+s|\bfortune\b|Fortuna|g
+s|\bcap\b|kap|g
+s|\bthread\b|rez'ba|g
+s|\bhaste\b|pospeshnost'|g
+s|\bbare\b|golye|g
+s|\bshirt\b|rubashka|g
+s|\bbargain\b|torg|g
+s|\bleather\b|kozha|g
+s|\brail\b|rel's|g
+s|\bbutter\b|maslo|g
+s|\bdot\b|tochka|g
+s|\binquire\b|uznat'|g
+s|\bwarmth\b|teplo|g
+s|\bdecisive\b|reshajuschim|g
+s|\bvessel\b|sudno|g
+s|\bpity\b|zhal'|g
+s|\bsteam\b|para|g
+s|\bpin\b|pin|g
+s|\bbound\b|privjazan|g
+s|\bcompanion\b|kompan'on|g
+s|\btoe\b|nosok|g
+s|\breward\b|nagrada|g
+s|\bforbid\b|upasi|g
+s|\bwherever\b|gde|g
+s|\btower\b|bashnja|g
+s|\bbathe\b|kupat'sja|g
+s|\blodge\b|lodzh|g
+s|\bswallow\b|lastochka|g
+s|\bmultiply\b|umnozh'te|g
+s|\bbow\b|luk|g
+s|\bkingdom\b|korolevstvo|g
+s|\bgarage\b|garazh|g
+s|\bpermission\b|razreshenie|g
+s|\bpump\b|nasos|g
+s|\bprevention\b|profilaktika|g
+s|\burgent\b|srochno|g
+s|\baunt\b|tetja|g
+s|\bzero\b|nol'|g
+s|\bidle\b|prostoja|g
+s|\bfever\b|lihoradka|g
+s|\bchristmas\b|Rozhdestvo|g
+s|\bregret\b|zhaleju|g
+s|\bjaw\b|cheljusti|g
+s|\bsoap\b|mylo|g
+s|\bpronounce\b|proiznosit'|g
+s|\bempire\b|imperija|g
+s|\bbowl\b|chasha|g
+s|\boutline\b|nabroski|g
+s|\borgan\b|organ|g
+s|\bimitation\b|imitatsija|g
+s|\bcaution\b|ostorozhno|g
+s|\bmineral\b|mineral'naja|g
+s|\bdisagree\b|ne soglasen|g
+s|\bblade\b|lezvie|g
+s|\btrick\b|trjuk|g
+s|\btreasure\b|sokrovische|g
+s|\bimmense\b|ogromnoe|g
+s|\bconvenience\b|udobstvo|g
+s|\bdisapprove\b|ne odobrjaju|g
+s|\bdestructive\b|destruktivnye|g
+s|\bfork\b|vilka|g
+s|\bnoon\b|polden'|g
+s|\bownership\b|sobstvennosti|g
+s|\btune\b|melodija|g
+s|\bpolish\b|pol'skij|g
+s|\bpoison\b|jad|g
+s|\bshame\b|pozor|g
+s|\bloyalty\b|lojal'nost'|g
+s|\bcottage\b|kottedzh|g
+s|\bastonish\b|udivit'|g
+s|\bshave\b|brit'sja|g
+s|\bfeather\b|pero|g
+s|\bsauce\b|sous|g
+s|\blid\b|kryshka|g
+s|\bdebt\b|zadolzhennosti|g
+s|\bfade\b|uvjadaet|g
+s|\bconfess\b|priznat'sja|g
+s|\bclassification\b|klassifikatsija|g
+s|\bdescend\b|spusk|g
+s|\bcape\b|mys|g
+s|\bmild\b|mjagkij|g
+s|\bclever\b|umnyj|g
+s|\benvelope\b|konvert|g
+s|\binvention\b|izobretenie|g
+s|\bsheep\b|ovtsy|g
+s|\bsplendid\b|velikolepnyj|g
+s|\bstamp\b|shtamp|g
+s|\bfloat\b|poplavok|g
+s|\bbrick\b|kirpich|g
+s|\brice\b|ris|g
+s|\bbusinessman\b|biznesmen|g
+s|\bbackward\b|nazad|g
+s|\bqualification\b|kvalifikatsija|g
+s|\bartificial\b|iskusstvennye|g
+s|\battraction\b|attraktsion|g
+s|\blamp\b|svetil'nik|g
+s|\bcurl\b|zavitok|g
+s|\bshower\b|dush|g
+s|\belder\b|starejshina|g
+s|\bbunch\b|kucha|g
+s|\bbell\b|Bell|g
+s|\bsteer\b|rulit'|g
+s|\bflavor\b|aromat|g
+s|\bspit\b|kosa|g
+s|\brob\b|Rob|g
+s|\bcream\b|krem|g
+s|\binterrupt\b|preryvanie|g
+s|\bpen\b|ruchka|g
+s|\bweave\b|perepletenija|g
+s|\borange\b|oranzhevyj|g
+s|\brescue\b|spasenie|g
+s|\bcrush\b|davka|g
+s|\bhumble\b|skromnyj|g
+s|\bfancy\b|fantazii|g
+s|\bdecay\b|raspad|g
+s|\bpolite\b|vezhlivyj|g
+s|\btribe\b|plemja|g
+s|\bbleed\b|krovotechenie|g
+s|\bcoin\b|moneta|g
+s|\bfond\b|ljublju|g
+s|\bautumn\b|osen'|g
+s|\bclassify\b|klassifitsirovat'|g
+s|\bomit\b|opustit'|g
+s|\bloyal\b|vernyj|g
+s|\bneedle\b|igly|g
+s|\blessen\b|umen'shit'|g
+s|\bcomplaint\b|zhaloba|g
+s|\bpad\b|puskovaja ploschadka|g
+s|\bsteep\b|krutoj|g
+s|\bskirt\b|jubka|g
+s|\bcurtain\b|zanaves|g
+s|\bcalculation\b|raschet|g
+s|\blaughter\b|smeh|g
+s|\bsolemn\b|torzhestvennoe|g
+s|\bgrease\b|smazka|g
+s|\binterfere\b|vmeshivat'sja|g
+s|\bexplode\b|vzorvat'sja|g
+s|\bfasten\b|zakrepit'|g
+s|\bflag\b|flag|g
+s|\bresign\b|v otstavku|g
+s|\bpostpone\b|otlozhit'|g
+s|\bpatience\b|terpenie|g
+s|\bboast\b|pohvastat'sja|g
+s|\brope\b|verevka|g
+s|\benvy\b|zavist'|g
+s|\bairplane\b|samolet|g
+s|\brid\b|problemoj|g
+s|\bshield\b|schit|g
+s|\bveil\b|vual'|g
+s|\bkneel\b|koleni|g
+s|\btray\b|lotok|g
+s|\bexplosive\b|vzryvnoj|g
+s|\bbrass\b|latun'|g
+s|\btaxi\b|taksi|g
+s|\bwax\b|vosk|g
+s|\bduck\b|utka|g
+s|\bbutton\b|knopka|g
+s|\binvent\b|pridumyvat'|g
+s|\bremedy\b|sredstvo|g
+s|\bbush\b|Bush|g
+s|\bthunder\b|grom|g
+s|\bweaken\b|oslabit'|g
+s|\bpoverty\b|bednost'|g
+s|\bscrape\b|tsarapina|g
+s|\barrow\b|strelka|g
+s|\btender\b|tender|g
+s|\bcruel\b|zhestokij|g
+s|\bsoften\b|smjagchit'|g
+s|\bmouse\b|mysh'|g
+s|\bhay\b|seno|g
+s|\banyhow\b|vo vsjakom sluchae|g
+s|\balike\b|tak|g
+s|\bcircular\b|tsirkuljar|g
+s|\bjuice\b|sok|g
+s|\bshelf\b|polka|g
+s|\bbake\b|vypekat'|g
+s|\bhatred\b|nenavist'|g
+s|\bcautious\b|ostorozhnyj|g
+s|\bbasket\b|korzina|g
+s|\bwreck\b|krushenie|g
+s|\bwidth\b|Shirina|g
+s|\bconfident\b|uverennyj|g
+s|\blog\b|zhurnal|g
+s|\bheap\b|kuchi|g
+s|\bsuck\b|sosat'|g
+s|\bladder\b|lestnitsa|g
+s|\bgap\b|razryv|g
+s|\bobey\b|podchinjat'sja|g
+s|\bhut\b|hizhina|g
+s|\baxe\b|topor|g
+s|\btranslation\b|perevod|g
+s|\bcollar\b|vorotnik|g
+s|\bdelivery\b|dostavka|g
+s|\breproduce\b|vosproizvesti|g
+s|\bconfession\b|ispoved'|g
+s|\bpan\b|pan|g
+s|\bprejudice\b|predubezhdenie|g
+s|\bvoyage\b|Vojazh|g
+s|\btobacco\b|tabak|g
+s|\bsimplicity\b|prostota|g
+s|\bpaste\b|vstav'te|g
+s|\bcake\b|tort|g
+s|\belephant\b|slon|g
+s|\bribbon\b|lenta|g
+s|\bharvest\b|urozhaj|g
+s|\bashamed\b|stydno|g
+s|\bcave\b|peschera|g
+s|\bcustomary\b|obychnoe|g
+s|\bthief\b|vor|g
+s|\bdamp\b|vlazhnye|g
+s|\bsew\b|shit'|g
+s|\brust\b|rzhavchiny|g
+s|\bseparation\b|razdelenie|g
+s|\bwaiter\b|ofitsiant|g
+s|\bpet\b|PET|g
+s|\bstraw\b|soloma|g
+s|\bupset\b|rasstroen|g
+s|\btowel\b|polotentse|g
+s|\brefresh\b|obnovit'|g
+s|\bessence\b|sut'|g
+s|\bfur\b|meh|g
+s|\bambitious\b|ambitsioznyj|g
+s|\bdefendant\b|otvetchik|g
+s|\bdaylight\b|dnevnoj svet|g
+s|\bdip\b|pogruzhenie|g
+s|\bsuspicious\b|podozritel'no|g
+s|\bimaginary\b|voobrazhaemyj|g
+s|\bash\b|jasen'|g
+s|\bcarriage\b|perevozki|g
+s|\beducator\b|vospitatel'|g
+s|\bsaw\b|videl|g
+s|\bstove\b|plita|g
+s|\brubber\b|rezina|g
+s|\brug\b|kover|g
+s|\bmisery\b|ubozhestvo|g
+s|\bawkward\b|nelovko|g
+s|\brival\b|sopernik|g
+s|\broast\b|zharkoe|g
+s|\bdeed\b|delo|g
+s|\bpreference\b|predpochtenie|g
+s|\bexplosion\b|vzryv|g
+s|\btheatrical\b|Teatral'naja|g
+s|\bcultivate\b|kul'tivirovat'|g
+s|\bcollector\b|kollektor|g
+s|\bmiserable\b|neschastnyj|g
+s|\bwrist\b|naruchnye|g
+s|\brabbit\b|krolik|g
+s|\baccustom\b|priuchit'|g
+s|\btide\b|priliv|g
+s|\binsult\b|oskorblenie|g
+s|\bthumb\b|bol'shoj palets|g
+s|\blump\b|shishka|g
+s|\bannoy\b|razdrazhat'|g
+s|\btoy\b|igrushka|g
+s|\bheal\b|istselit'|g
+s|\bshallow\b|melkoe|g
+s|\brepetition\b|povtorenie|g
+s|\bsoup\b|sup|g
+s|\bwhistle\b|svistok|g
+s|\bscenery\b|pejzazh|g
+s|\bapple\b|jabloko|g
+s|\boffense\b|obid|g
+s|\bcork\b|Kork|g
+s|\bripe\b|spelye|g
+s|\btemper\b|nrav|g
+s|\bsore\b|bolit|g
+s|\bpinch\b|schepotka|g
+s|\bdiamond\b|almaz|g
+s|\brazor\b|britva|g
+s|\bimaginative\b|tvorcheskie|g
+s|\bhook\b|krjuk|g
+s|\bcopper\b|med'|g
+s|\blandlord\b|arendodatel'|g
+s|\binfluential\b|vlijatel'nyh|g
+s|\brot\b|gnil'|g
+s|\bhollow\b|polye|g
+s|\benclose\b|zakljuchite|g
+s|\bharden\b|Harden|g
+s|\bwicked\b|zlaja|g
+s|\bstiffen\b|grubejut|g
+s|\bsilk\b|shelk|g
+s|\bupright\b|v vertikal'nom polozhenii|g
+s|\bselfish\b|egoist|g
+s|\bstripe\b|nashivki|g
+s|\bpig\b|svin'ja|g
+s|\binward\b|vnutr'|g
+s|\bexcellence\b|sovershenstvo|g
+s|\brake\b|grabli|g
+s|\bpurple\b|fioletovyj|g
+s|\bhasten\b|speshu|g
+s|\bshorten\b|ukorotit'|g
+s|\bapplause\b|aplodismenty|g
+s|\bache\b|bol'|g
+s|\bapology\b|izvinenija|g
+s|\bknot\b|uzel|g
+s|\bnephew\b|plemjannik|g
+s|\bcushion\b|podushka|g
+s|\bdrown\b|utopit'|g
+s|\bnursery\b|pitomnik|g
+s|\bpint\b|pinta|g
+s|\bfierce\b|ozhestochennye|g
+s|\bimitate\b|podrazhat'|g
+s|\baloud\b|vsluh|g
+s|\bgaiety\b|veselost'|g
+s|\brobbery\b|ograblenie|g
+s|\btighten\b|zatjanite|g
+s|\bperfection\b|sovershenstvo|g
+s|\bscorn\b|prezrenie|g
+s|\bwhoever\b|kto|g
+s|\btrunk\b|bagazhnik|g
+s|\bwool\b|sherst'|g
+s|\bsailor\b|matros|g
+s|\bcompetitor\b|konkurent|g
+s|\bmoonlight\b|lunnyj svet|g
+s|\bdeer\b|olen'|g
+s|\bbean\b|fasol'|g
+s|\beveryday\b|povsednevnoj|g
+s|\bdrawer\b|jaschik|g
+s|\bdisregard\b|prenebrezhenie|g
+s|\bnowadays\b|segodnja|g
+s|\bpatriotic\b|Otechestvennoj|g
+s|\btin\b|zhest'|g
+s|\bpenny\b|Penni|g
+s|\bcage\b|kletka|g
+s|\bpardon\b|pardon|g
+s|\blately\b|v poslednee vremja|g
+s|\boffend\b|obidet'|g
+s|\bcoarse\b|grubaja|g
+s|\bspoil\b|isportit'|g
+s|\bhorizontal\b|gorizontal'nyj|g
+s|\bsting\b|Sting|g
+s|\bditch\b|rov|g
+s|\blibrarian\b|bibliotekar'|g
+s|\bmeantime\b|poka|g
+s|\bcough\b|kashel'|g
+s|\bdeaf\b|gluhih|g
+s|\bsword\b|mech|g
+s|\bmessenger\b|poslannik|g
+s|\bvain\b|zrja|g
+s|\bcastle\b|zamok|g
+s|\belastic\b|elastichnyj|g
+s|\bcomb\b|greben'|g
+s|\brod\b|shtanga|g
+s|\bwiden\b|rasshirit'|g
+s|\bsorrow\b|pechal'|g
+s|\binventor\b|izobretatel'|g
+s|\bcliff\b|Kliff|g
+s|\bumbrella\b|zontik|g
+s|\binterruption\b|preryvanie|g
+s|\bmerry\b|s Rozhdestvom|g
+s|\bgallon\b|gallon|g
+s|\bconquest\b|zavoevanie|g
+s|\bheadache\b|golovnaja bol'|g
+s|\btailor\b|portnoj|g
+s|\bbucket\b|vedro|g
+s|\bscent\b|aromat|g
+s|\bsignature\b|podpis'|g
+s|\bcart\b|telezhka|g
+s|\bdarken\b|temnejut|g
+s|\bsometime\b|kak-nibud'|g
+s|\bapplaud\b|aplodirujut|g
+s|\bunderneath\b|pod|g
+s|\bhello\b|privet|g
+s|\bpretense\b|pritvorstvo|g
+s|\bdescent\b|spusk|g
+s|\bconquer\b|pokorit'|g
+s|\bframework\b|ramki|g
+s|\bconfidential\b|konfidentsial'noj|g
+s|\badoption\b|prinjatie|g
+s|\bdisgust\b|otvraschenie|g
+s|\bwaist\b|talija|g
+s|\bmomentary\b|odnokratno|g
+s|\breceipt\b|kvitantsija|g
+s|\bpearl\b|zhemchuzhina|g
+s|\bray\b|Rej|g
+s|\blazy\b|lenivyj|g
+s|\blimb\b|konechnosti|g
+s|\bgrammatical\b|grammaticheskie|g
+s|\bbeast\b|zver'|g
+s|\bmonkey\b|obez'jana|g
+s|\bjewel\b|zhemchuzhina|g
+s|\bpersuasion\b|ubezhdenija|g
+s|\bobedience\b|poslushanie|g
+s|\bsock\b|nosok|g
+s|\bvowel\b|glasnyj|g
+s|\bhammer\b|molotok|g
+s|\binn\b|INN|g
+s|\bchimney\b|dymohod|g
+s|\bdissatisfaction\b|nedovol'stvo|g
+s|\bannoyance\b|razdrazhenie|g
+s|\bornament\b|ornament|g
+s|\bhonesty\b|chestnost'|g
+s|\boutward\b|naruzhu|g
+s|\bsharpen\b|tochit'|g
+s|\bhandkerchief\b|platok|g
+s|\bgreed\b|zhadnost'|g
+s|\bheavenly\b|nebesnyj|g
+s|\bthirst\b|zhazhda|g
+s|\bniece\b|plemjannitsa|g
+s|\bspill\b|razliv|g
+s|\bloaf\b|karavaj|g
+s|\bwheat\b|pshenitsa|g
+s|\bworm\b|cherv'|g
+s|\bsecrecy\b|tajny|g
+s|\brude\b|grubo|g
+s|\bheighten\b|povysit'|g
+s|\bflatten\b|spljuschit'|g
+s|\bloosen\b|Oslab'te|g
+s|\bcheese\b|syr|g
+s|\brivalry\b|sopernichestvo|g
+s|\broyalty\b|rojalti|g
+s|\bdiscontent\b|nedovol'stvo|g
+s|\bcomplication\b|oslozhnenie|g
+s|\bfright\b|ispug|g
+s|\bindoor\b|krytyj|g
+s|\bflour\b|muka|g
+s|\bactress\b|aktrisa|g
+s|\bcongratulation\b|pozdravlenie|g
+s|\bounce\b|untsija|g
+s|\bfry\b|Fraj|g
+s|\beverlasting\b|vechnyj|g
+s|\bgoat\b|koza|g
+s|\bink\b|chernila|g
+s|\bdisappearance\b|ischeznovenie|g
+s|\breproduction\b|razmnozhenie|g
+s|\bthicken\b|sguschaet|g
+s|\bavoidance\b|izbeganie|g
+s|\bspoon\b|lozhka|g
+s|\bstrap\b|remen'|g
+s|\bdeceive\b|obmanut'|g
+s|\blengthen\b|udlinit'|g
+s|\brevenge\b|mest'|g
+s|\bcorrection\b|korrektsija|g
+s|\bdescendant\b|potomok|g
+s|\bhesitation\b|kolebanij|g
+s|\bspade\b|lopata|g
+s|\bbasin\b|bassejna|g
+s|\bweed\b|sornjak|g
+s|\bomission\b|upuschenie|g
+s|\bold-fashioned\b|staromodnyj|g
+s|\bbicycle\b|prokat|g
+s|\bbreadth\b|shirota|g
+s|\bphotography\b|fotografija|g
+s|\bcoward\b|trus|g
+s|\bmat\b|kovrik|g
+s|\brejoice\b|radujsja|g
+s|\bcheat\b|chit|g
+s|\bcongratulate\b|pozdravljaju|g
+s|\bdiscomfort\b|diskomfort|g
+s|\benclosure\b|korpus|g
+s|\battentive\b|vnimatel'nyj|g
+s|\bpaw\b|lapa|g
+s|\boverflow\b|perepolnenie|g
+s|\bdissatisfy\b|neudovletvorjaete|g
+s|\bmultiplication\b|umnozhenie|g
+s|\bwhichever\b|kakoj by|g
+s|\btidy\b|akkuratnyj|g
+s|\bbribe\b|vzjatku|g
+s|\bmend\b|chinjat|g
+s|\bstocking\b|chulok|g
+s|\bfeast\b|prazdnik|g
+s|\bnuisance\b|neprijatnost'|g
+s|\bthorn\b|Torn|g
+s|\btame\b|priruchit'|g
+s|\binclusive\b|vkljuchitel'no|g
+s|\bhomemade\b|domashnie|g
+s|\bhandwriting\b|pocherk|g
+s|\bchalk\b|mel|g
+s|\bsour\b|kislyj|g
+s|\bslippery\b|skol'zkij|g
+s|\bprocession\b|shestvie|g
+s|\bripen\b|sozrevajut|g
+s|\bjealous\b|revnovat'|g
+s|\bjealousy\b|revnost'|g
+s|\bliar\b|lzhets|g
+s|\bhomecoming\b|vozvraschenie na rodinu|g
+s|\bbarber\b|parikmaherskaja|g
+s|\bwhiten\b|otbelit'|g
+s|\bberry\b|jagoda|g
+s|\blighten\b|osvetlit'|g
+s|\bpigeon\b|golub'|g
+s|\bhinder\b|meshajut|g
+s|\bbravery\b|hrabrost'|g
+s|\bbaggage\b|bagazh|g
+s|\bnoun\b|suschestvitel'noe|g
+s|\bamongst\b|sredi|g
+s|\bgrammar\b|grammatika|g
+s|\bcultivation\b|vyraschivanie|g
+s|\bcompanionship\b|obschenie|g
+s|\brubbish\b|musor|g
+s|\bmodesty\b|skromnost'|g
+s|\bwoolen\b|sherstjanye|g
+s|\bdeepen\b|uglubit'|g
+s|\bpastry\b|testo|g
+s|\bcupboard\b|shkaf|g
+s|\bquart\b|kvarta|g
+s|\bcanal\b|kanal|g
+s|\bnotebook\b|tetrad'|g
+s|\bdeceit\b|obmana|g
+s|\bparcel\b|posylku|g
+s|\bbrighten\b|skrasit'|g
+s|\bmoderation\b|umerennost'|g
+s|\bpunctual\b|punktual'nyj|g
+s|\bhurrah\b|ura|g
+s|\blipstick\b|pomada|g
+s|\buppermost\b|verhnij|g
+s|\bfatten\b|otkormit'|g
+s|\bconqueror\b|zavoevatel'|g
+s|\bhindrance\b|pomeha|g
+s|\bcowardice\b|trusost'|g
+s|\bobedient\b|poslushnyj|g
+s|\bsaucer\b|bljudtse|g
+s|\bmadden\b|medden|g
+s|\bscold\b|rugat'|g
+s|\bweekday\b|budnij den'|g
+s|\brotten\b|gniloj|g
+s|\bdisrespect\b|neuvazhenie|g
+s|\bwidower\b|vdovets|g
+s|\bdeafen\b|glushim|g
+s|\bdonkey\b|osel|g
+s|\bbusinesslike\b|po-delovomu|g
+s|\bmotherhood\b|materinstvo|g
+s|\bsadden\b|ogorchat|g
+s|\bhandshake\b|rukopozhatie|g
+s|\bcalculator\b|kal'kuljator|g
+s|\bheaddress\b|golovnoj ubor|g
+s|\bscissors\b|nozhnitsy|g
+s|\btranslator\b|perevodchik|g
+s|\bpossessor\b|obladatel'|g
+s|\bshilling\b|shilling|g
+s|\bredden\b|krasnejut|g
+s|\bmotherly\b|po-materinski|g
+s|\bwhose\b|chej|g
+s|\bcultivator\b|kul'tivator|g
+s|\bwhom\b|komu|g
+s|\bhomework\b|domashnee zadanie|g
+s|\belectrician\b|elektrik|g
+s|\boar\b|veslo|g
+s|\bbribery\b|vzjatochnichestvo|g
+s|\bsweeten\b|podslastit'|g
+s|\bsow\b|sejat'|g
+s|\bpronunciation\b|proiznoshenie|g
+s|\bbeak\b|kljuv|g
+s|\bplural\b|mnozhestvennoe chislo|g
