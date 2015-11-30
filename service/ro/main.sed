@@ -53,7 +53,7 @@
     b;
   }
   h;
-  s#.*#dd if=/dev/urandom count=1 bs=1000 status=none | base64#e;
+  s#.*#dd if=/dev/urandom count=1 bs=1000 2>/dev/null | base64#e;
   s/^.*([A-F0-9]).*([A-F0-9]).*$/\1\2/;
   s/.*/Please enter your alphanumeric password xored with byte 0x& and hex encoded:/p;
   s/^.*0x(..).*/\1/;
