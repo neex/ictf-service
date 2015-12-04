@@ -1,6 +1,6 @@
 service_name: nadmozg
 type: console
-decription: google translate killer
+description: google translate killer
 flag_id_description: private dictionary name
 architecture: x86_64
 
